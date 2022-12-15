@@ -1,0 +1,1 @@
+web: gunicorn mirbeton.wsgi --log-file -
