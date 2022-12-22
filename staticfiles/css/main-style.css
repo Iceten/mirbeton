@@ -2770,7 +2770,7 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   display: grid !important;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 66% 34%;
 }
 .section-articles--wrapper-cards__card--illus {
   height: 100%;
@@ -4017,7 +4017,7 @@ body {
   overflow: hidden;
   box-shadow: 0.05rem 0.05rem 0.2rem 0.15rem var(--color-secondary-light-2);
   display: grid !important;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 66% 34%;
 }
 .section-all-articles--wrapper-cards__card--illus {
   height: 100%;
