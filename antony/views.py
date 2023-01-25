@@ -673,15 +673,18 @@ def send_email_lead_consult(form, http_header):
     last_name = form.cleaned_data['last_name']
     phone = form.cleaned_data['phone']
     zipcode = form.cleaned_data['zipcode']
+    work_type = form.cleaned_data['work_type']
+    surface = form.cleaned_data['surface']
 
     try:
         email = form.cleaned_data['email']
     except:
         email = 'INVALID EMAIL'
 
-    sentence = 'Here is your new lead for MIR Couverture - Antony\n' + 'First Name: ' + first_name + '\n' + 'Last Name: ' + last_name + '\n' + \
+    sentence = 'Here is your new lead for MIR Béton - Antony\n' + 'First Name: ' + first_name + '\n' + 'Last Name: ' + last_name + '\n' + \
         'Email: ' + email + '\n' + 'Phone: ' + phone + '\n' + \
-        'Zip Code: ' + zipcode + '\n' + 'IP Address: ' + remote_ip
+        'Zip Code: ' + zipcode + '\n' + 'Work Type: ' + work_type + '\n' + \
+        'Surface: ' + surface + '\n' + 'IP Address: ' + remote_ip
 
     send_mail('New Consult Lead From MIR Couverture Antony!', sentence, from_email=settings.EMAIL_HOST_USER,
               recipient_list=[settings.ADMIN_EMAIL], fail_silently=False)

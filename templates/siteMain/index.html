@@ -20,227 +20,128 @@
     </div>
 
     <div class="section-content">
-         <div class="section-content--container">
-            <div class="section-content--container__wrapper-form">
-                <div class="subsection-prospect-form" id="prospect-form">
-                    <div class="subsection-prospect-form--wrapper-header">
-                        <p class="subsection-prospect-form--wrapper-header__title">Devis Gratuit en un Insant</p>
-                        <ul class="subsection-prospect-form--wrap-benefit-list">
-                            <li class="subsection-prospect-form--wrap-benefit-list__item">Devis sans engagement</li>
-                            <li class="subsection-prospect-form--wrap-benefit-list__item">Inspection Gratuite</li>
-                        </ul>
-                        <p class="subsection-prospect-form--wrapper-header__promo">
-                            * Profitez d'un bon de 50 euro avant le 30/01/2023
-                        </p>
-                    </div>
-                    <div class="subsection-prospect-form--wrapper-form">
-                        <form class="subsection-prospect-form--wrapper-form__form" method="POST">
-                            <div class="subsection-prospect-form--wrapper-form__form--wrapper-radio">
-                                <p class="subsection-prospect-form--wrapper-form__form--wrapper-radio__desc">Quel type de travaux?</p>
-                                {{ lead_form.work_type}}
-                            </div>
+        <div class="section-content--container">
+           <div class="section-content--container__wrapper-form">
+               <div class="subsection-prospect-form" id="prospect-form">
+                   <div class="subsection-prospect-form--wrapper-header">
+                       <p class="subsection-prospect-form--wrapper-header__title">Devis Gratuit en un Insant</p>
+                       <ul class="subsection-prospect-form--wrap-benefit-list">
+                           <li class="subsection-prospect-form--wrap-benefit-list__item">Devis sans engagement</li>
+                           <li class="subsection-prospect-form--wrap-benefit-list__item">Inspection Gratuite</li>
+                       </ul>
+                       <p class="subsection-prospect-form--wrapper-header__promo">
+                           * Profitez d'un bon de 50 euro avant le 30/01/2023
+                       </p>
+                   </div>
+                   <div class="subsection-prospect-form--wrapper-form">
+                       <form class="subsection-prospect-form--wrapper-form__form" method="POST">
+                           <div class="subsection-prospect-form--wrapper-form__form--wrapper-radio">
+                               <p class="subsection-prospect-form--wrapper-form__form--wrapper-radio__desc">Quel type de travaux?</p>
+                               {{ lead_form.work_type}}
+                           </div>
 
-                            <div class="subsection-prospect-form--wrapper-form__form--wrapper-select">
-                                <p class="subsection-prospect-form--wrapper-form__form--wrapper-select__desc" for="work-surface">Quel Surface?</p>
-                                <div class="subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices">
-                                    {{ lead_form.surface}} 
-                                </div>
-                            </div>
+                           <div class="subsection-prospect-form--wrapper-form__form--wrapper-select">
+                               <p class="subsection-prospect-form--wrapper-form__form--wrapper-select__desc" for="work-surface">Quel Surface?</p>
+                               <div class="subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices">
+                                   {{ lead_form.surface}} 
+                               </div>
+                           </div>
 
-                            {{ lead_form.first_name}}
-                            {{ lead_form.last_name}}
-                            {{ lead_form.email}}
-                            {{ lead_form.phone}}
-                            {{ lead_form.zipcode}}
-                            {{ lead_form.lead_consult_form }}
-                            <input class="subsection-prospect-form--wrapper-form__form--submit" type="submit" value="Recevoir mon devis">
-                            {% csrf_token %}
-                        </form>
-                        <div class="subsection-prospect-form--wrapper-form__wrap-policy">
-                            <p class="subsection-prospect-form--wrapper-form__wrap-policy--para">En renseignant vos informations, vous acceptez de recevoir nos communications par courrier électronique et télépphone et vous prenez connaissance de notre <a href="" class="nakedLink">Politique de confidentialité</a>. Vous pouvez vous désinscrire à tout moment avec le lien fourni dans chaque e-mail ou en envoyant un message à leadinsightmarketing@gmail.com.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>            
+                           {{ lead_form.first_name}}
+                           {{ lead_form.last_name}}
+                           {{ lead_form.email}}
+                           {{ lead_form.phone}}
+                           {{ lead_form.zipcode}}
+                           {{ lead_form.lead_consult_form }}
+                           <input class="subsection-prospect-form--wrapper-form__form--submit" type="submit" value="Recevoir mon devis">
+                           {% csrf_token %}
+                       </form>
+                       <div class="subsection-prospect-form--wrapper-form__wrap-policy">
+                           <p class="subsection-prospect-form--wrapper-form__wrap-policy--para">En renseignant vos informations, vous acceptez de recevoir nos communications par courrier électronique et télépphone et vous prenez connaissance de notre <a href="" class="nakedLink">Politique de confidentialité</a>. Vous pouvez vous désinscrire à tout moment avec le lien fourni dans chaque e-mail ou en envoyant un message à leadinsightmarketing@gmail.com.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>             
 
-            <div class="section-content--container__wrapper-img-full">
-                <figure>
-                    <a href="{% static 'img/mirbeton-009-life-of-pix-2469.jpg' %}" 
-                    data-pswp-width="2000" 
-                    data-pswp-height="1500" 
-                    target="_blank">
-                        <img src="{% static 'img/mirbeton-009-life-of-pix-2469.jpg' %}" alt="">
-                    </a>                     
-                </figure> 
-            </div>
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-009-life-of-pix-2469.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-009-life-of-pix-2469.jpg' %}" alt="">
+                   </a>                     
+               </figure> 
+           </div>
 
-            <div class="section-content--container__wrap-txt">
-                <h1 class="section-content--container__wrap-txt--title">
-                    MIR BETON - Chapiste à Antony
-                </h1>
-                <h1 class="section-content--container__wrap-txt--subtitle">
-                    votre entreprise de béton de chois
-                </h1>
-                <h1 class="section-content--container__wrap-txt--para-bold">
-                    Notre entreprise de béton, basé à antony,  vous propose l'expertise de ces artisans
-                </h1>
-                <p class="section-content--container__wrap-txt--para">
-                    Nous intervenons sur l'ensemble de vos besoins en travaux de betonnerie:  travaux de couverture, rénovation de toiture, étanchéité, zinguerie, entretien de toiture,nettoyage & démoussage de toiture, traitement hydrofuge imperméabilisant,  pose de fenêtre de toit,isolation au bitume...
-                    Nos experts maîtrise les travaux pour tout type de toiture: Toiture en tuile, ardoise, bac acier. 
-                </p>
-                <p class="section-content--container__wrap-txt--para">
-                    Nous avons pour mission chez <span class="style-bold">MIR Couverture </span>
-                     d'apporter une grande satisfaction à chacun de nos clients à Tours pour cela nous appliquons les meilleures pratiques du métier de couvreur zingueur et déployons notre savoir-faire afin de prodiguer un service impeccable. Nous sommes à l'écoute des besoins de nos clients et mettons en avant leurs intérêts. Pour ces raisons nous utilisons les matériaux de meilleure qualité pour assurer que les toitures de nos clients performent leur foction   durablement.
-                </p>
-                <p class="section-content--container__wrap-txt--para">
-                    A la suite de la rencontre d'un de nos artisans pour une inspection de votre toiture vous obtiendrez un devis avec les prestations préconisé clairement indiqué sans travaux supplémentaires inutile. 
-                    Nous faisons en sorte de rendre votre maison et toiture saine est donc libre de tout parasite. Votre toiture qui est votre protection principale contre les intempéries et les aléas météo météorologiques sera en état optimal pour vous protéger de l'humidité. 
-                    MIR Couverture se positionne comme <span class="style-bold">votre entreprise de choix pour tous travaux d'entretien sur votre toiture.</span> 
-                </p>
-            </div>
+           <div class="section-content--container__wrap-txt">
+               <h1 class="section-content--container__wrap-txt--title">
+                   MIR BETON- Entreprise de Béton à Antony
+               </h1>
+               <div class="section-content--container__wrap-txt">
+                   <h2 class="section-content--container__wrap-txt--subtitle">
+                    Notre entreprise et ses artisans spécialistes du béton  vous proposent leurs services à Antony
+                   </h1>
+       
+                   <p class="section-content--container__wrap-txt--para">
+                    Notre entreprise comme d'autres spécialistes du béton fournissent un large panel de services de béton comprenant la livraison du béton au mètre cube, la pose de dalle de béton,la réalisation de béton imprimé et autres béton décoratif. Vous pouvez ainsi nous demander de couler une dalle de béton ou réaliser des fondations en béton.</p>
+       
+                    <p class="section-content--container__wrap-txt--para">En tant qu'expert nous souhaitons mettre à votre disposition nos services de professionnels du béton à Antony. Vous pouvez nous confier réalisation de votre chape liquide. Notre objectif est de devenir le meilleur chapiste à Antony. Nous travaillons avec les particuliers, les entreprises et les collectivités locales. Il vous suffit de faire une demande de devis de béton pour Antony en nous appelant ou en remplissant le formulaire.</p>
+               </div>
+           </div>
 
-            <div class="section-content--container__wrapper-img-full">
-                <figure>
-                    <a href="{% static 'img/mirbeton-016-rodolfo-quirós-2219024.jpg' %}" 
-                    data-pswp-width="2000" 
-                    data-pswp-height="1500" 
-                    target="_blank">
-                        <img src="{% static 'img/mirbeton-016-rodolfo-quirós-2219024.jpg' %}" alt="">
-                    </a>                     
-                </figure> 
-            </div>
-            
-            <div class="section-content--container__wrap-txt">
-                <h1 class="section-content--container__wrap-txt--title">
-                    Nettoyage & Démoussage de Toiture à Tours
-                </h1>
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-016-rodolfo-quirós-2219024.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-016-rodolfo-quirós-2219024.jpg' %}" alt="">
+                   </a>                     
+               </figure> 
+           </div>
+           
+           <div class="section-content--container__wrap-txt">
+               <h2 class="section-content--container__wrap-txt--subtitle">
+                   Votre Chapiste de Choix à Antony
+                  </h1>
+   
+               <p class="section-content--container__wrap-txt--para">
+                Nous intervenons en tant qu'artisan du béton à Antony et ses environs. Nous mettons à votre service notre savoir-faire et notre expérience de qualité. Nous vous accompagnons dans votre projet de béton à Antony. Vous pouvez nous faire confiance pour votre projet d’aménagement intérieur et extérieur. Nous vous accompagnons de la conception de votre projet jusqu'à la réalisation de celui-ci en vous apportant les meilleures solutions techniques pour arriver au meilleur résultat possible.  Notre premier objectif et de réaliser votre vision et pour cela nos artisans du béton mettent la compréhension et l'écoute en priorité.
+               </p>
+   
+               <p class="section-content--container__wrap-txt--para">
+                "Entreprise du béton à Antony" est probablement la dernière chose que vous auriez penser rechercher sur le web. Peut-être que vous souhaitez enfin réaliser ce nouveau parking où cette allée ou encore aménager votre patio pour la saison à venir. Vous remarquerez que le ciment dans ces différentes formes est une commodité. nNtre devise et de vous apporter de la valeur en amont et de vous montrer que travailler avec nous et mieux que simplement appeler différentes sociétés de béton .
+               </p>
+   
+               <p class="section-content--container__wrap-txt--para">
+                Si vous êtes sur le marché à la recherche de quelque chose en rapport avec le ciment vous frappez à la bonne porte. Nos artisans offrent des services aux particuliers comme aux professionnels et collectivités locales. Que vous ayez acheter une nouvelle maison et que vous ayez besoin de rénover un parking, ou que vous souhaitez simplement une estimation pour un projet de rêve n'hésitez pas à nous contacter. Nos experts pourrons décorer votre ciment, faire la réparation de votre maçonnerie, couler des fondations et même créer votre allée ou chemin.
+               </p>
+           </div>
+           
+           <div class="section-content--container__wrapper-img-full">
+                   <figure>
+                       <a href="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" 
+                       data-pswp-width="2000" 
+                       data-pswp-height="1500" 
+                       target="_blank">
+                           <img src="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" alt="" style="object-position: 70% 70% !important">
+                       </a>                     
+                   </figure> 
+           </div>
 
-                <h1 class="section-content--container__wrap-txt--subtitle">Rénovation par Nettoyage & Démoussage de Toiture à Tours</h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                    Nos couvreurs et artisans professionnels interviennent à Tours et dans  l'Indre-et-Loire pour tout type de travaux de réparation et rénovation de toiture. Nous effectuons aussi des nettoyage et démoussage de toiture.</p>
-
-                 <h1 class="section-content--container__wrap-txt--para-bold">Vous souhaitez connaître le prix du démoussage de votre toiture à Tours?</h1>
-
-                 <p class="section-content--container__wrap-txt--para">Contactez-nous pour obtenir un bon tarif pour le démoussage de votre toiture. Nous proposons des prix et tarifs abordables pour le nettoyage de votre toiture.Quelles sont les différentes méthodes étapes mise en œuvre pour obtenir le meilleur résultat avec le nettoyage de votre toiture?
-                L'objectif est de rendre sa jeunesse à votre toit peu importe qu'il soit composé d'ardoise de tuiles ou de bac acier. Nos artisans professionnels vont par exemple utiliser des jets à haute pression ou des jets à basse pression selon la solidité des matériaux qui composent votre toiture par exemple pour une toiture en tuile nous n'utilisons pas un jet d'eau à fort débit ceci pourrait créer des risques d'infiltration d'eau.</p>
-
-                <p class="section-content--container__wrap-txt--para">
-                Nos couvreurs professionnels à Tours peuvent utiliser une brosse dure et de l'eau pour frotter l'intégralité de votre toiture afin de retirer les tâches
-                une fois cette étape réalisé, Il s'ensuit un nettoyage par démoussage après le retrait des mousses principales et lichens. Nous pouvons appliquer un produit anti-mousse pour ralentir durablement la repousse de la végétation.
-                Notre entreprise de couverture préconise ensuite d'utiliser un traitement hydrofuge de toiture. Ce produit imperméabilisant va allongé la durée de vie de la protection de votre toiture.
-                Enfin nous terminerons par le nettoyage des gouttières en retirant les déchets.
-                Pour le nettoyage et démoussage de toiture, nos couvreurs professionnels à Tours réalisent ces prestations pour des prix ou tarif abordables.  
-                </p>
-
-                <h1 class="section-content--container__wrap-txt--subtitle">Traitement et Imperméabilisation de toiture par hydrofuge à Tours</h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                    Nous effectuons l'imperméabilisation de votre toiture à l'aide hydrofuge incolore. En effet, suite à l'usure de votre toiture de la mousse peut s'installer. Pour protéger votre toiture et garder des travaux de couverture à un bon tarif ou prix il est intéressant d'effectuer c'est imperméabilisation par hydrofuge.
-                </p>
-            </div>
-            
-            <div class="section-content--container__wrapper-img-full">
-                    <figure>
-                        <a href="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" 
-                        data-pswp-width="2000" 
-                        data-pswp-height="1500" 
-                        target="_blank">
-                            <img src="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" alt="" style="object-position: 70% 70% !important">
-                        </a>                     
-                    </figure> 
-            </div>
-
-            <div class="section-content--container__wrap-txt">
-                <h1 class="section-content--container__wrap-txt--subtitle">Réparation & Rénovation de Faîtage à Tours</h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                Réparer ou rénover votre faîtage  peut-être une nécessité car c'est un élément important de votre toiture.
-                Votre faîtage rénové pourra assurer l'étanchéité de votre toiture, il protège votre charpente et l'isolation général. Nos artisans professionnels à Tours effectuent de nombreuses rénovations de faîtage.
-                </p>
-
-                <h1 class="section-content--container__wrap-txt--subtitle">Entretien pour tout type de toiture</h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                    Notre entreprise de couverture intervient sur sur tout type de toiture que vous ayez une toiture en ardoise une toiture en tuile ou en bac acier
-                    Nous effectuons différentes interventions que ce soit pour effectuer un nettoyage démoussage ou des réfections de rives et zinguerie.
-                    Les couverture en tuiles sont faciles d'entretien et économiques. Vous trouverez un choix larges dans différentes couleurs, les couvertures en en ardoise sont plus sophistiquées et demandent une certaine maîtrise pour l'entretien. Nos artisans couvreurs à Tours sont expérimentés avec les techniques nécessaires pour manier l'ardoise.
-                    Nos couvreurs spécialiste en zinguerie se focalise sur l'étanchéité de votre toiture ces matériaux ont pour fonction d'assurer l'écoulement des eaux pluviales grâce à vos gouttières.
-                </p>
-            </div>
-            
-            <div class="section-content--container__wrapper-img-full">
-                <figure>
-                    <a href="{% static 'img/mirbeton-011-marianne-238377.jpg' %}" 
-                    data-pswp-width="2000" 
-                    data-pswp-height="1500" 
-                    target="_blank">
-                        <img src="{% static 'img/mirbeton-011-marianne-238377.jpg' %}" alt="">
-                    </a>                     
-                </figure> 
-            </div>
-
-            <div class="section-content--container__wrap-txt">
-                <h1 class="section-content--container__wrap-txt--subtitle">Etanchéité de cheminée à Tours</h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                    Les couvreurs professionnels de MIR couverture à Tours peuvent tout aussi assurer l'étanchéité de votre cheminée. Ne pas prendre soin de l'étanchéité de votre cheminée peut-être problématique car cela laisserait le développement de champignons et moisissure sur votre charpente. Nos artisans professionnels à Tours sont expérimentés avec l'étanchéité de cheminée.
-
-                    Nos couvreurs spécialistes en zinguerie se focalise sur l'étanchéité de votre toiture. Ces matériaux ont pour fonction d'assurer l'écoulement des eaux pluviales grâce à vos gouttières.
-                </p>
-
-                <h1 class="section-content--container__wrap-txt--subtitle">Etanchéité de Toit plat à Tours</h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                    Nos artisans professionnels sont aussi expérimentés avec les toits plats et notamment l'étanchéité au bitume. Une isolation au bitume se voit souvent utilisée pour des terrasses ou des toits plats. Afin de  réaliser une étanchéité complète de votre toit plat nous pouvons  utiliser des bandes recouvertes de bitume
-
-                </p>
-
-                <h1 class="section-content--container__wrap-txt--subtitle">Fenêtre de toit à Tours</h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                Si vous souhaitez apporter de la luminosité dans une pièce sous les combles vous pouvez créer une fenêtre de toit.
-                Nos couvreurs expert  à Tours peuvent réaliser pour vous ces fenêtres de toit.                     
-                </p>
-
-                <h1 class="section-content--container__wrap-txt--subtitle">Peinture de Toiture à Tours</h1>
-
-                <p class="section-content--container__wrap-txt--para">Nos couvreurs à Tours peuvent aussi vous proposer des imperméabilisation par hydrofuge coloré pour redonner un éclat lors de la rénovation de votre toiture. </p>
-                
-                <h1 class="section-content--container__wrap-txt--subtitle">Recherche de fuite de Toiture à Tours</h1>
-
-                <p class="section-content--container__wrap-txt--para"> N'hésitez pas à contacter nos couvreurs professionnels à Tours pour l'inspection de votre toiture si vous soupçonner une fuite. Nos artisans expérimentés sont qualifiés pour diagnostiquer le problème et préconiser la meilleure solution pour assurer l'isolation de votre toiture.  </p>
-
-                <h1 class="section-content--container__wrap-txt--subtitle">
-                    Professionnel de l’entretien et nettoyage de votre toiture (tuiles & ardoises)
-                </h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                    Pour préserver la durée de vie de votre toiture il est nécessaire de procéder à l'entretien de celle-ci. Mire couverture se met à votre service pour prendre soin de votre toiture qu'elle soit composée de tuiles ou d'ardoises. Les artisans de notre entreprise professionnel de couverture à Tours sont à votre disposition pour des conseils et des inspections. 
-                </p>
-
-                <h1 class="section-content--container__wrap-txt--subtitle">
-                    Artisan Couvreur spécialiste en nettoyage & démoussage de toiture 
-                </h1>
-
-                <p class="section-content--container__wrap-txt--para">
-                    Nous offrons un service de démoussage de toiture pour lutter contre les algues et le lichen.  ce nettoyage anti-mousse a pour objectif de prévenir durablement les dégradations sur votre toiture.
-                    les traitements anti-mousse son imperméabilisant il est donc préconisé  d'utiliser un traitement hydrofuge régulièrement.
-                </p>
-            </div>
-
-            <div class="section-content--container__wrap-txt">
-                <div class="section-content--container__wrap-txt--btn-cta">
-                    <svg class="btn-cta--symbol">
-                        <use href="{% static 'img/sprite.svg' %}#calendar"></use>
-                    </svg>
-                    <a href="#prospect-form" class="btn-cta--text">
-                        <span> Evaluer le montant de mon projet</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+           <div class="section-content--container__wrap-txt">
+               <div class="section-content--container__wrap-txt--btn-cta">
+                   <svg class="btn-cta--symbol">
+                       <use href="{% static 'img/sprite.svg' %}#calendar"></use>
+                   </svg>
+                   <a href="#prospect-form" class="btn-cta--text">
+                       <span> Evaluer le montant de mon projet</span>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
 
     <div class="section-gallery">
         <div class="section-gallery--body">
