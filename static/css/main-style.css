@@ -1801,8 +1801,8 @@ body {
   color: var(--color-quaternary);
 }
 .section-content--container__wrap-txt--list {
-  list-style: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: var(--color-grey-dark-1);
 }
 .section-content--container__wrap-txt--list__item {
   position: relative;
@@ -2293,7 +2293,6 @@ body {
     color: var(--color-quaternary);
   }
   .section-content--container__wrap-txt--list {
-    list-style: none;
     font-size: 1.5rem;
   }
   .section-content--container__wrap-txt--list__item {

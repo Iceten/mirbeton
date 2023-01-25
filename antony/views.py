@@ -37,13 +37,13 @@ def indexAntony(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'antony/index-antony.html', context=context)
+                return render(request, 'antony/index.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'antony/index-antony.html', context=context)
+        return render(request, 'antony/index.html', context=context)
 
 
-def isolationAntony(request):
+def pageServices(request):
     newLead = LeadConsultForm()
     context = {
         'lead_form': newLead,
@@ -74,10 +74,49 @@ def isolationAntony(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'antony/isolation-thermique-antony.html', context=context)
+                return render(request, 'antony/index.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'antony/isolation-thermique-antony.html', context=context)
+        return render(request, 'antony/all-services.html', context=context)
+
+
+def pageArticles(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/index.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/all-articles.html', context=context)
+
+# --------------------------  GDPR Pages -------------
 
 
 def mentions_lega(request):
@@ -91,10 +130,531 @@ def politique_conf(request):
 def politique_cook(request):
     return render(request, 'antony/politique-de-cookies.html')
 
+# --------------------------  Services Pages -------------
 
+
+def pageService_1(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/index.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-1.html', context=context)
+
+
+def pageServiceBordureBeton(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-beton-bordure.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-beton-bordure.html', context=context)
+
+
+def pageServiceBetonCire(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-beton-cire.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-beton-cire.html', context=context)
+
+
+def pageServiceDalleBeton(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-beton-dalle.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-beton-dalle.html', context=context)
+
+
+def pageServiceBetonDecoratif(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-beton-decoratif.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-beton-decoratif.html', context=context)
+
+
+def pageServiceBetonDesactive(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-beton-desactive.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-beton-desactive.html', context=context)
+
+
+def pageServiceBetonImprime(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-beton-imprime.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-beton-imprime.html', context=context)
+
+
+def pageServiceBitumeEnrobe(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-bitume.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-bitume.html', context=context)
+
+
+def pageServiceCoulageFondation(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-fondation.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-fondation.html', context=context)
+
+
+def pageServicePavageDallage(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-pavage.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-pavage.html', context=context)
+
+
+def pageServiceResineEpoxy(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-resine-sol-epoxy.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-resine-sol-epoxy.html', context=context)
+
+
+def pageServiceGresCerame(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-terrasse-gres-cerame.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-terrasse-gres-cerame.html', context=context)
+
+
+def pageServicePierreNaturelle(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/service-terrasse-pierre-naturelle.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/service-terrasse-pierre-naturelle.html', context=context)
+
+
+# -------------------------- Articles Pages -------------
+def pageArticle_1(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/antony/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'antony/index.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'antony/article-1.html', context=context)
 # --------------------------  Thank You Pages -------------
+
+
 def thankYouAntony(request):
-    return render(request, 'antony/thank-you-antony.html')
+    return render(request, 'antony/index-thank-you.html')
 
 
 #------------------------------ Send E-mail Functions  ----------------------------------#

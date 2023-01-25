@@ -24,5 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^$', views.index, name='index'),
     re_path(r'^siteMain/', include('siteMain.urls', namespace="siteMain")),
-    re_path(r'^antony/', include('antony.urls')),
+    re_path(r'^antony/', include('antony.urls', namespace="antony")),
 ]
