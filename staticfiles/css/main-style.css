@@ -1696,6 +1696,11 @@ body {
   position: absolute;
   left: 0;
 }
+@media screen and (max-width: 600px) {
+  .section-headline.short-headline .section-headline--wrapper__title {
+    font-size: 2rem;
+  }
+}
 
 .section-content {
   z-index: 30;
