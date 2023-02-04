@@ -120,15 +120,15 @@ def pageArticles(request):
 
 
 def mentions_lega(request):
-    return render(request, 'antony/mentions-legales.html')
+    return render(request, 'antony/mentions_legales.html')
 
 
 def politique_conf(request):
-    return render(request, 'antony/politique-de-confidentialite.html')
+    return render(request, 'antony/politique_de_confidentialite.html')
 
 
 def politique_cook(request):
-    return render(request, 'antony/politique-de-cookies.html')
+    return render(request, 'antony/politique_de_cookies.html')
 
 # --------------------------  Services Pages -------------
 
