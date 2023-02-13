@@ -30,3 +30,14 @@ if (btnPromo != null) {
     }
   });
 }
+
+let urlPath = window.location.href;
+if (urlPath.search("thank-you") > -1) {
+  var delayInMilliseconds = 1000;
+  setTimeout(function () {
+    if (window.dataLayer != null) {
+      dataLayer.push({ event: "consultationFormSent" });
+    }
+    console.log("Consultation form sent");
+  }, delayInMilliseconds);
+}
