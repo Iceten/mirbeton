@@ -3535,6 +3535,15 @@ body {
     width: 10%;
     height: 80%;
   }
+  .section-top-cta--wrap-cta__phonelink {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .section-top-cta--wrap-cta__phonelink--symbol {
+    margin-right: 0.7rem;
+    width: 10%;
+    height: 80%;
+  }
 }
 @media screen and (max-width: 500px) {
   .section-top-cta {
@@ -3544,6 +3553,14 @@ body {
     font-size: 1.15rem;
   }
   .section-top-cta--wrap-cta__link--symbol {
+    margin-right: 0.3rem;
+    width: 10%;
+    height: 80%;
+  }
+  .section-top-cta--wrap-cta__phonelink {
+    font-size: 1.15rem;
+  }
+  .section-top-cta--wrap-cta__phonelink--symbol {
     margin-right: 0.3rem;
     width: 10%;
     height: 80%;

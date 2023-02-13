@@ -1,9 +1,11 @@
-const btnFreeQuote = document.querySelector(
-  ".section-navigation--wrapper-nav__links--wrap-cta__link"
-);
+const btnFreeQuote = document.querySelector(".section-top-cta--wrap-cta__link");
 const btnFreeEvaluation = document.querySelector(
   ".section-content--container__wrap-txt--btn-cta"
 );
+const btnTopPhoneLink = document.querySelector(
+  ".section-top-cta--wrap-cta__phonelink"
+);
+
 const btnPromo = document.querySelector("section-top-banner--para");
 
 // Add Events to DataLayer
@@ -19,6 +21,20 @@ if (btnFreeEvaluation != null) {
   btnFreeEvaluation.addEventListener("click", function () {
     if (window.dataLayer != null) {
       dataLayer.push({ event: "clickEvaluation" });
+    }
+  });
+}
+
+if (btnTopPhoneLink != null) {
+  btnTopPhoneLink.addEventListener("click", function () {
+    var delayInMilliseconds = 100;
+    setTimeout(function () {
+      //your code to be executed after 1 second
+      console.log("Click Top Phone Link");
+    }, delayInMilliseconds);
+
+    if (window.dataLayer != null) {
+      dataLayer.push({ event: "clickTopPhoneLink" });
     }
   });
 }
