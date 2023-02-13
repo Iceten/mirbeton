@@ -1467,7 +1467,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .section-navigation--wrapper-nav__links a:link,
-  .section-navigation--wrapper-nav__links a:visited {
+.section-navigation--wrapper-nav__links a:visited {
     font-size: 1.2rem;
   }
 }
@@ -1488,7 +1488,7 @@ body {
 }
 
 .section-headline {
-  background-image: var(--overlay-2-extra-light), url(../img/mirbeton-002-bilal-mansuri-13041118.jpg);
+  background-image: var(--overlay-2-extra-light), url("../img/mirbeton-002-bilal-mansuri-13041118.b8a9f5faf201.jpg");
   background-position: center center;
   background-size: cover;
   transition: 0.4s ease;
@@ -2491,7 +2491,7 @@ body {
   align-items: center;
 }
 .subsection-prospect-form--wrap-benefit-list__item::before {
-  background-image: url(../img/checkbox-green.png);
+  background-image: url("../img/checkbox-green.459a80936fc0.png");
   background-size: contain;
   background-repeat: no-repeat;
   content: "";
@@ -2811,7 +2811,7 @@ body {
     font-size: 1.6rem;
   }
   .section-articles--wrapper-cards__card--wrap-text a:link,
-  .section-articles--wrapper-cards__card--wrap-text a:visited, .section-articles--wrapper-cards__card--wrap-text__btn {
+.section-articles--wrapper-cards__card--wrap-text a:visited, .section-articles--wrapper-cards__card--wrap-text__btn {
     font-size: 1.4rem;
   }
 }
@@ -2823,7 +2823,7 @@ body {
     font-size: 1.6rem;
   }
   .section-articles--wrapper-cards__card--wrap-text a:link,
-  .section-articles--wrapper-cards__card--wrap-text a:visited, .section-articles--wrapper-cards__card--wrap-text__btn {
+.section-articles--wrapper-cards__card--wrap-text a:visited, .section-articles--wrapper-cards__card--wrap-text__btn {
     font-size: 1.4rem;
   }
 }
@@ -2838,7 +2838,7 @@ body {
     font-size: 1.2rem;
   }
   .section-articles--wrapper-cards__card--wrap-text a:link,
-  .section-articles--wrapper-cards__card--wrap-text a:visited, .section-articles--wrapper-cards__card--wrap-text__btn {
+.section-articles--wrapper-cards__card--wrap-text a:visited, .section-articles--wrapper-cards__card--wrap-text__btn {
     text-decoration: none;
     text-align: center;
     color: var(--color-red-1);
@@ -2984,7 +2984,7 @@ body {
     margin-left: 1rem;
   }
   .section-reviews--wrapper-reviews__card--wrap-origin a:link,
-  .section-reviews--wrapper-reviews__card--wrap-origin a:visited, .section-reviews--wrapper-reviews__card--wrap-origin__origin {
+.section-reviews--wrapper-reviews__card--wrap-origin a:visited, .section-reviews--wrapper-reviews__card--wrap-origin__origin {
     text-decoration: none;
     color: var(--color-primary);
     font-size: 1.5rem;
@@ -3061,7 +3061,7 @@ body {
     margin-left: 1rem;
   }
   .section-reviews--wrapper-reviews__card--wrap-origin a:link,
-  .section-reviews--wrapper-reviews__card--wrap-origin a:visited, .section-reviews--wrapper-reviews__card--wrap-origin__origin {
+.section-reviews--wrapper-reviews__card--wrap-origin a:visited, .section-reviews--wrapper-reviews__card--wrap-origin__origin {
     text-decoration: none;
     color: var(--color-primary);
     font-size: 1.3rem;
@@ -3093,7 +3093,7 @@ body {
     font-weight: 800;
   }
   .section-reviews--wrapper-text a:link,
-  .section-reviews--wrapper-text a:visited {
+.section-reviews--wrapper-text a:visited {
     text-decoration: none;
     color: var(--color-secondary-light-1);
     font-size: 1.8rem;
@@ -3128,7 +3128,7 @@ body {
     font-weight: 800;
   }
   .section-reviews--wrapper-text a:link,
-  .section-reviews--wrapper-text a:visited {
+.section-reviews--wrapper-text a:visited {
     text-decoration: none;
     color: var(--color-secondary-light-1);
     font-size: 1.3rem;
@@ -3177,7 +3177,7 @@ body {
     margin-left: 1rem;
   }
   .section-reviews--wrapper-reviews__card--wrap-origin a:link,
-  .section-reviews--wrapper-reviews__card--wrap-origin a:visited, .section-reviews--wrapper-reviews__card--wrap-origin__origin {
+.section-reviews--wrapper-reviews__card--wrap-origin a:visited, .section-reviews--wrapper-reviews__card--wrap-origin__origin {
     text-decoration: none;
     color: var(--color-primary);
     font-size: 1rem;
@@ -3212,7 +3212,7 @@ body {
     font-weight: 800;
   }
   .section-reviews--wrapper-text a:link,
-  .section-reviews--wrapper-text a:visited {
+.section-reviews--wrapper-text a:visited {
     text-decoration: none;
     color: var(--color-secondary-light-1);
     font-size: 1.2rem;
@@ -3261,7 +3261,7 @@ body {
     margin-left: 1rem;
   }
   .section-reviews--wrapper-reviews__card--wrap-origin a:link,
-  .section-reviews--wrapper-reviews__card--wrap-origin a:visited, .section-reviews--wrapper-reviews__card--wrap-origin__origin {
+.section-reviews--wrapper-reviews__card--wrap-origin a:visited, .section-reviews--wrapper-reviews__card--wrap-origin__origin {
     text-decoration: none;
     color: var(--color-primary);
     font-size: 1rem;
@@ -3436,7 +3436,7 @@ body {
     margin-right: 1rem;
   }
   .section-footer--wrapper-links a:link,
-  .section-footer--wrapper-links a:visited {
+.section-footer--wrapper-links a:visited {
     font-size: 0.9rem;
   }
 }
@@ -3453,7 +3453,7 @@ body {
     text-align: start;
   }
   .section-footer--wrapper-links a:link,
-  .section-footer--wrapper-links a:visited {
+.section-footer--wrapper-links a:visited {
     font-size: 0.9rem;
   }
   .section-footer--wrapper-copyright {
@@ -3491,18 +3491,6 @@ body {
   text-transform: uppercase;
 }
 .section-top-cta--wrap-cta__link--symbol {
-  margin-right: 0.7rem;
-  width: 10%;
-  height: 80%;
-}
-.section-top-cta--wrap-cta__phonelink {
-  text-decoration: none;
-  font-size: 2rem;
-  color: var(--color-red-1);
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.section-top-cta--wrap-cta__phonelink--symbol {
   margin-right: 0.7rem;
   width: 10%;
   height: 80%;
@@ -4069,7 +4057,7 @@ body {
     font-size: 1.6rem;
   }
   .section-all-articles--wrapper-cards__card--wrap-text a:link,
-  .section-all-articles--wrapper-cards__card--wrap-text a:visited, .section-all-articles--wrapper-cards__card--wrap-text__btn {
+.section-all-articles--wrapper-cards__card--wrap-text a:visited, .section-all-articles--wrapper-cards__card--wrap-text__btn {
     font-size: 1.4rem;
   }
 }
@@ -4078,7 +4066,7 @@ body {
     font-size: 1.6rem;
   }
   .section-all-articles--wrapper-cards__card--wrap-text a:link,
-  .section-all-articles--wrapper-cards__card--wrap-text a:visited, .section-all-articles--wrapper-cards__card--wrap-text__btn {
+.section-all-articles--wrapper-cards__card--wrap-text a:visited, .section-all-articles--wrapper-cards__card--wrap-text__btn {
     font-size: 1.4rem;
   }
 }
@@ -4103,7 +4091,7 @@ body {
     font-size: 1.2rem;
   }
   .section-all-articles--wrapper-cards__card--wrap-text a:link,
-  .section-all-articles--wrapper-cards__card--wrap-text a:visited, .section-all-articles--wrapper-cards__card--wrap-text__btn {
+.section-all-articles--wrapper-cards__card--wrap-text a:visited, .section-all-articles--wrapper-cards__card--wrap-text__btn {
     font-size: 1rem;
   }
 }/*# sourceMappingURL=main-style.css.map */
