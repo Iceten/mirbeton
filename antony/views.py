@@ -686,5 +686,5 @@ def send_email_lead_consult(form, http_header):
         'Zip Code: ' + zipcode + '\n' + 'Work Type: ' + work_type + '\n' + \
         'Surface: ' + surface + '\n' + 'IP Address: ' + remote_ip
 
-    send_mail('New Consult Lead From MIR Couverture Antony!', sentence, from_email=settings.EMAIL_HOST_USER,
+    send_mail('New Consult Lead From MIR Beton Antony!', sentence, from_email=settings.EMAIL_HOST_USER,
               recipient_list=[settings.ADMIN_EMAIL], fail_silently=False)
