@@ -13,6 +13,7 @@ if (btnFreeQuote != null) {
   btnFreeQuote.addEventListener("click", function () {
     if (window.dataLayer != null) {
       dataLayer.push({ event: "clickQuote" });
+      console.log("Quote asked");
     }
   });
 }

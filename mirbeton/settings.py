@@ -54,6 +54,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mirbeton.com', 'mirbeton.fr']
 
 INSTALLED_APPS = [
     'siteMain',
+    'ales',
     'antony',
     'django.contrib.admin',
     'django.contrib.auth',
