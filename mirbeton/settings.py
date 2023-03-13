@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'ales',
     'antony',
     'cholet',
+    'chatellerault',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
