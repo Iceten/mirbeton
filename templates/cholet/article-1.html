@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+{% extends "cholet/base.html" %}
+{% load static %}
+
+{% block meta_description_block %}
+<meta name="description" content="MIR Beton, Votre Chapiste de choix Inspection Gratuite, Sans Engagement,">
+{% endblock%}
+
+{% block title_block %}
+<title>MIR BETON ARTICLE 1</title>
+{% endblock%}
+
+{% block body_block %}
+
+    <div class="section-headline short-headline">
+        <div class="section-headline--wrapper">
+            <!-- <h2 class="section-headline--wrapper__subtitle">Vous souhaitez rénover votre toiture?</h2> -->
+            <h1 class="section-headline--wrapper__title">ARTICLE</h1>
+        </div>
+    </div>
+
+    <div class="section-content">
+        <div class="section-content--container">
+           <div class="section-content--container__wrapper-form">
+               <div class="subsection-prospect-form" id="prospect-form">
+                   <div class="subsection-prospect-form--wrapper-header">
+                       <p class="subsection-prospect-form--wrapper-header__title">Devis Gratuit en un Insant</p>
+                       <ul class="subsection-prospect-form--wrap-benefit-list">
+                           <li class="subsection-prospect-form--wrap-benefit-list__item">Devis sans engagement</li>
+                           <li class="subsection-prospect-form--wrap-benefit-list__item">Inspection Gratuite</li>
+                       </ul>
+                       <p class="subsection-prospect-form--wrapper-header__promo">
+                           * Profitez d'un bon de 50 euro avant le 30/01/2023
+                       </p>
+                   </div>
+                   <div class="subsection-prospect-form--wrapper-form">
+                       <form class="subsection-prospect-form--wrapper-form__form" method="POST">
+                           <div class="subsection-prospect-form--wrapper-form__form--wrapper-radio">
+                               <p class="subsection-prospect-form--wrapper-form__form--wrapper-radio__desc">Quel type de travaux?</p>
+                               {{ lead_form.work_type}}
+                           </div>
+
+                           <div class="subsection-prospect-form--wrapper-form__form--wrapper-select">
+                               <p class="subsection-prospect-form--wrapper-form__form--wrapper-select__desc" for="work-surface">Quel Surface?</p>
+                               <div class="subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices">
+                                   {{ lead_form.surface}} 
+                               </div>
+                           </div>
+
+                           {{ lead_form.first_name}}
+                           {{ lead_form.last_name}}
+                           {{ lead_form.email}}
+                           {{ lead_form.phone}}
+                           {{ lead_form.zipcode}}
+                           {{ lead_form.lead_consult_form }}
+                           <input class="subsection-prospect-form--wrapper-form__form--submit" type="submit" value="Recevoir mon devis">
+                           {% csrf_token %}
+                       </form>
+                       <div class="subsection-prospect-form--wrapper-form__wrap-policy">
+                           <p class="subsection-prospect-form--wrapper-form__wrap-policy--para">En renseignant vos informations, vous acceptez de recevoir nos communications par courrier électronique et télépphone et vous prenez connaissance de notre <a href="" class="nakedLink">Politique de confidentialité</a>. Vous pouvez vous désinscrire à tout moment avec le lien fourni dans chaque e-mail ou en envoyant un message à leadinsightmarketing@gmail.com.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>             
+
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-009-life-of-pix-2469.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-009-life-of-pix-2469.jpg' %}" alt="">
+                   </a>                     
+               </figure> 
+           </div>
+
+           <div class="section-content--container__wrap-txt">
+               <h1 class="section-content--container__wrap-txt--title">
+                   MIR BETON- Entreprise de Béton à Cholet
+               </h1>
+               <div class="section-content--container__wrap-txt">
+                   <h2 class="section-content--container__wrap-txt--subtitle">
+                    Notre entreprise et ses artisans spécialistes du béton  vous proposent leurs services à Cholet
+                   </h2>
+       
+                   <p class="section-content--container__wrap-txt--para">
+                    Notre entreprise comme d'autres spécialistes du béton fournissent un large panel de services de béton comprenant la livraison du béton au mètre cube, la pose de dalles de béton,la réalisation de béton imprimé et autres bétons décoratifs. Vous pouvez ainsi nous demander de couler une dalle de béton ou réaliser des fondations en béton.
+                    </p>
+       
+                    <p class="section-content--container__wrap-txt--para">
+                        En tant qu'expert nous souhaitons mettre à votre disposition nos services de professionnels du béton à Cholet. Vous pouvez nous confier la réalisation de votre chape liquide. Notre objectif est de devenir le meilleur chapiste à Cholet. Nous travaillons avec les particuliers, les entreprises et les collectivités locales. Il vous suffit de faire une demande de devis de béton pour Cholet en nous appelant ou en remplissant le formulaire.
+                    </p>
+               </div>
+           </div>
+
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-016-rodolfo-quirós-2219024.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-016-rodolfo-quirós-2219024.jpg' %}" alt="">
+                   </a>                     
+               </figure> 
+           </div>
+           
+           <div class="section-content--container__wrap-txt">
+               <h2 class="section-content--container__wrap-txt--subtitle">
+                   Votre Chapiste de Choix à Cholet
+                  </h1>
+   
+               <p class="section-content--container__wrap-txt--para">
+                Nous intervenons en tant qu'artisan du béton à Cholet et ses environs. Nous mettons à votre service notre savoir-faire et notre expérience de qualité. Nous vous accompagnons dans votre projet de béton à Cholet. Vous pouvez nous faire confiance pour votre projet d’aménagement intérieur et extérieur. Nous vous accompagnons de la conception de votre projet jusqu'à la réalisation de celui-ci en vous apportant les meilleures solutions techniques pour arriver au meilleur résultat possible.  Notre premier objectif est de réaliser votre vision et pour cela nos artisans du béton mettent la compréhension et l'écoute en priorité.
+               </p>
+   
+               <p class="section-content--container__wrap-txt--para">
+                "Entreprise du béton à Cholet" est probablement la dernière chose que vous auriez pensé rechercher sur le web. Peut-être que vous souhaitez enfin réaliser ce nouveau parking où cette allée ou encore aménager votre patio pour la saison à venir. Vous remarquerez que le ciment dans ces différentes formes est une commodité. Notre objectif est de vous apporter de la valeur en amont et de vous montrer que travailler avec nous et mieux que simplement appeler différentes sociétés de béton.
+               </p>
+   
+               <p class="section-content--container__wrap-txt--para">
+                Si vous êtes sur le marché à la recherche de quelque chose en rapport avec le ciment vous frappez à la bonne porte. Nos artisans offrent des services aux particuliers comme aux professionnels et collectivités locales. Que vous ayez acheté une nouvelle maison et que vous ayez besoin de rénover un parking, ou que vous souhaitez simplement une estimation pour un projet de rêve, n'hésitez pas à nous contacter. Nos experts pourront décorer votre ciment, faire la réparation de votre maçonnerie, couler des fondations et même créer votre allée ou chemin.
+               </p>
+           </div>
+           
+           <div class="section-content--container__wrapper-img-full">
+                   <figure>
+                       <a href="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" 
+                       data-pswp-width="2000" 
+                       data-pswp-height="1500" 
+                       target="_blank">
+                           <img src="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" alt="" style="object-position: 70% 70% !important">
+                       </a>                     
+                   </figure> 
+           </div>
+
+           <div class="section-content--container__wrap-txt">
+               <div class="section-content--container__wrap-txt--btn-cta">
+                   <svg class="btn-cta--symbol">
+                       <use href="{% static 'img/sprite.svg' %}#calendar"></use>
+                   </svg>
+                   <a href="#prospect-form" class="btn-cta--text">
+                       <span> Evaluer le montant de mon projet</span>
+                   </a>
+               </div>
+           </div>
+        </div>
+   </div>
+
+   <div class="section-articles">
+    <div class="section-articles--wrapper-cards">
+        <div class="section-articles--wrapper-cards__card">
+            <img class="section-articles--wrapper-cards__card--illus" src="{% static 'img/mirbeton-136.jpg' %}" alt="">
+            <div class="section-articles--wrapper-cards__card--wrap-text">
+                <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part I?</h2>
+            
+                <a href="{% url 'cholet:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+            </div>
+        </div> 
+        <div class="section-articles--wrapper-cards__card">
+            <img class="section-articles--wrapper-cards__card--illus" src="{% static 'img/mirbeton-137.jpg' %}" alt="">
+            <div class="section-articles--wrapper-cards__card--wrap-text">
+                <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part II?</h2>
+            
+                <a href="{% url 'cholet:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+            </div>
+        </div> 
+        <div class="section-articles--wrapper-cards__card">
+            <img class="section-articles--wrapper-cards__card--illus" src="{% static 'img/mirbeton-138.jpg' %}" alt="">
+            <div class="section-articles--wrapper-cards__card--wrap-text">
+                <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part III?</h2>
+            
+                <a href="{% url 'cholet:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+            </div>
+        </div> 
+        <div class="section-articles--wrapper-cards__card">
+            <img class="section-articles--wrapper-cards__card--illus" src="{% static 'img/mirbeton-139.jpg' %}" alt="">
+            <div class="section-articles--wrapper-cards__card--wrap-text">
+                <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part IV?</h2>
+            
+                <a href="{% url 'cholet:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+            </div>
+        </div>   
+    </div>
+</div>
+
+<div class="section-reviews">
+    <div class="section-reviews--wrapper-text">
+        <p class="section-reviews--wrapper-text__title">avis</p>
+        <p class="section-reviews--wrapper-text__subtitle">Plus de 100 clients à ce jour</p>
+        <p class="section-reviews--wrapper-text__para">Nous prenons soin de servir nos clients pour leur offrir le meilleur résultat et la meilleur expérience. Voici quelques retours. N'hésitez pas à nous laisser un avis par mail</p>  
+    </div>
+    <div class="section-reviews--wrapper-reviews">
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220; Merci pour cette expérience, nous sommes satisfait du travail fourni. Dès la demande de devis j’ai pu être prise en charge rapidement et professionnellement. Notre terrasse a retrouvé sa jeunesse et rendu son éclat à la maison.
+                Cordialement, 
+                  &#8221;</p>
+            
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Mathilde Chaumier</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">03/04/2021</a>
+            </div>
+
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220; A la recherche d’une entreprise sérieuse pour rénover ma terrasse, j’ai apprécié le professionnalisme à la suite de la demande d’un devis. Les artisans ont fait un bon travail, je suis satisfait.  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Auguste Rabier</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">12/06/2021</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Ce fut une excellente expérience. Merci d' avoir répondu à mes questions et pour un travail bien réalisé. Les membres de votre équipe ont été courtois et démontré une bonne communication. Je ne pensais pas que le rendu transformerai autant mon extérieur.
+                &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Julie fredet</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">17/07/2021</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Entreprise sérieuse, bonne communication et respect des délais, je suis satisfait.  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Thomas joubert</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">06/09/2021</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Nous avions besoin d'ajouter des bordures dans notre jardin et faire un chemin pavé. Nous avons rapidement été prise en charge pour une appréciation du projet et un devis. Nous avons fait le choix de travailler avec vous par rapport au professionnalisme et au prix compétitif proposé. Nous n’avons pas été déçus. Merci encore  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Marie Renardet</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">10/10/2021</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Une équipe compréhensive et sympathiques. Ma chape de béton a été réalisé rapidement comme promis. Vous avez un certain savoir-faire, je suis satisfait du résultat. &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Hugo Vertoux</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">18/03/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Je voulais un revêtement pour mon garage. Les artisans sont venus rapidement et ont bien fait le travail. Je recommande.  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Hassan Djebali</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">04/05/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;J’ai été contacté par vos équipes à la suite de ma demande de devis. J’ai apprécié la flexibilité pour la prise de rendez-vous et l’écoute par rapport à mon problème.
+                Les artisans venus voir mon jardin et m'ont bien conseillé. Je suis satisfait de la qualité de leur travail et de leur savoir-faire.
+                  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Driss soule</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">15/10/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Le sol de la devanture de notre maison avait besoin d'une rénovation. J’ai effectué une demande de devis. La personne qui m’a contacté était à l’écoute et agréable. Nous avons pu convenir d’un rendez-vous rapidement. J’ai eu un devis à un prix intéressant et je suis satisfaite du travail effectué, ma maison est comme neuve.  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Victoire lambert</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">23/07/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;J’ai contacté vos équipes pour rénover ma salle de bain. J’ai obtenu un rendez-vous et un devis convenable rapidement. Les artisans ont effectué un bon travail. Merci
+                Cordialement,
+                  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Steven Brieux</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">13/06/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;J’ai apprécié votre réactivité ainsi que votre savoir-faire. Vous ne poussez pas les gens à faire des travaux inutiles, merci pour vos conseils.
+                Je suis satisfait de la prestation.
+                  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">David Bernard</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">08/10/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Je suis contente de l’expérience en général. Nous souhaitions effectuer une rénovation de notre cuisine et notre salle de bain. J’ai apprécié le sérieux et l’organisation à la suite de ma demande de devis. L’artisan était à l’écoute et à pu nous faire profiter de son savoir-faire pour nous conseiller. Ceci avec le montant du devis convenable m’a motivé à travailler avec vous.
+                Je recommande 
+                  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Thérèse Mouveaux</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">17/10/2022</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section-gallery-bis">
+        <div class="section-gallery-bis--wrapper-cards">
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-117.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-118.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-119.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-120.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-121.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-122.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-123.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-124.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-131.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-132.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-127.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-128.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-129.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-130.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-131.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-132.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-133.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-134.jpg' %}" alt="">
+            </div>
+            <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+                <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-135.jpg' %}" alt="">
+            </div>
+        </div>
+       
+    </div>
+
+
+    <div class="section-content">
+        <div class="section-content--container">
+           <div class="section-content--container__wrapper-form">
+            <div class="subsection-prospect-form" id="prospect-form">
+                <div class="subsection-prospect-form--wrapper-header">
+                    <p class="subsection-prospect-form--wrapper-header__title">Devis Gratuit en un Insant</p>
+                    <ul class="subsection-prospect-form--wrap-benefit-list">
+                        <li class="subsection-prospect-form--wrap-benefit-list__item">Devis sans engagement</li>
+                        <li class="subsection-prospect-form--wrap-benefit-list__item">Inspection Gratuite</li>
+                    </ul>
+                    <p class="subsection-prospect-form--wrapper-header__promo">
+                        * Profitez d'un bon de 50 euro avant le 30/01/2023
+                    </p>
+                </div>
+                <div class="subsection-prospect-form--wrapper-form">
+                    <form class="subsection-prospect-form--wrapper-form__form" method="POST">
+                        <div class="subsection-prospect-form--wrapper-form__form--wrapper-radio">
+                            <p class="subsection-prospect-form--wrapper-form__form--wrapper-radio__desc">Quel type de travaux?</p>
+                            {{ lead_form.work_type}}
+                        </div>
+
+                        <div class="subsection-prospect-form--wrapper-form__form--wrapper-select">
+                            <p class="subsection-prospect-form--wrapper-form__form--wrapper-select__desc" for="work-surface">Quel Surface?</p>
+                            <div class="subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices">
+                                {{ lead_form.surface}} 
+                            </div>
+                        </div>
+
+                        {{ lead_form.first_name}}
+                        {{ lead_form.last_name}}
+                        {{ lead_form.email}}
+                        {{ lead_form.phone}}
+                        {{ lead_form.zipcode}}
+                        {{ lead_form.lead_consult_form }}
+                        <input class="subsection-prospect-form--wrapper-form__form--submit" type="submit" value="Recevoir mon devis">
+                        {% csrf_token %}
+                    </form>
+                    <div class="subsection-prospect-form--wrapper-form__wrap-policy">
+                        <p class="subsection-prospect-form--wrapper-form__wrap-policy--para">En renseignant vos informations, vous acceptez de recevoir nos communications par courrier électronique et télépphone et vous prenez connaissance de notre <a href="" class="nakedLink">Politique de confidentialité</a>. Vous pouvez vous désinscrire à tout moment avec le lien fourni dans chaque e-mail ou en envoyant un message à leadinsightmarketing@gmail.com.</p>
+                    </div>
+                </div>
+            </div>
+           </div>    
+        </div>
+    </div>
+
+   
+    {% endblock %}
