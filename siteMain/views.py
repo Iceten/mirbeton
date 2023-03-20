@@ -265,7 +265,7 @@ def pageService_1(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -273,10 +273,10 @@ def pageService_1(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/index.html', context=context)
+                return render(request, 'siteMain/index.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-1.html', context=context)
+        return render(request, 'siteMain/service-1.html', context=context)
 
 
 def pageServiceBordureBeton(request):
@@ -302,7 +302,7 @@ def pageServiceBordureBeton(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -310,10 +310,10 @@ def pageServiceBordureBeton(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-beton-bordure.html', context=context)
+                return render(request, 'siteMain/service-beton-bordure.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-beton-bordure.html', context=context)
+        return render(request, 'siteMain/service-beton-bordure.html', context=context)
 
 
 def pageServiceBetonCire(request):
@@ -339,7 +339,7 @@ def pageServiceBetonCire(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -347,10 +347,10 @@ def pageServiceBetonCire(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-beton-cire.html', context=context)
+                return render(request, 'siteMain/service-beton-cire.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-beton-cire.html', context=context)
+        return render(request, 'siteMain/service-beton-cire.html', context=context)
 
 
 def pageServiceDalleBeton(request):
@@ -376,7 +376,7 @@ def pageServiceDalleBeton(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -384,10 +384,10 @@ def pageServiceDalleBeton(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-beton-dalle.html', context=context)
+                return render(request, 'siteMain/service-beton-dalle.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-beton-dalle.html', context=context)
+        return render(request, 'siteMain/service-beton-dalle.html', context=context)
 
 
 def pageServiceBetonDecoratif(request):
@@ -413,7 +413,7 @@ def pageServiceBetonDecoratif(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -421,10 +421,10 @@ def pageServiceBetonDecoratif(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-beton-decoratif.html', context=context)
+                return render(request, 'siteMain/service-beton-decoratif.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-beton-decoratif.html', context=context)
+        return render(request, 'siteMain/service-beton-decoratif.html', context=context)
 
 
 def pageServiceBetonDesactive(request):
@@ -450,7 +450,7 @@ def pageServiceBetonDesactive(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -458,10 +458,10 @@ def pageServiceBetonDesactive(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-beton-desactive.html', context=context)
+                return render(request, 'siteMain/service-beton-desactive.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-beton-desactive.html', context=context)
+        return render(request, 'siteMain/service-beton-desactive.html', context=context)
 
 
 def pageServiceBetonImprime(request):
@@ -487,7 +487,7 @@ def pageServiceBetonImprime(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -495,10 +495,10 @@ def pageServiceBetonImprime(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-beton-imprime.html', context=context)
+                return render(request, 'siteMain/service-beton-imprime.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-beton-imprime.html', context=context)
+        return render(request, 'siteMain/service-beton-imprime.html', context=context)
 
 
 def pageServiceBitumeEnrobe(request):
@@ -524,7 +524,7 @@ def pageServiceBitumeEnrobe(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -532,10 +532,10 @@ def pageServiceBitumeEnrobe(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-bitume.html', context=context)
+                return render(request, 'siteMain/service-bitume.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-bitume.html', context=context)
+        return render(request, 'siteMain/service-bitume.html', context=context)
 
 
 def pageServiceCoulageFondation(request):
@@ -561,7 +561,7 @@ def pageServiceCoulageFondation(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -569,10 +569,10 @@ def pageServiceCoulageFondation(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-fondation.html', context=context)
+                return render(request, 'siteMain/service-fondation.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-fondation.html', context=context)
+        return render(request, 'siteMain/service-fondation.html', context=context)
 
 
 def pageServicePavageDallage(request):
@@ -598,7 +598,7 @@ def pageServicePavageDallage(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -606,10 +606,10 @@ def pageServicePavageDallage(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-pavage.html', context=context)
+                return render(request, 'siteMain/service-pavage.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-pavage.html', context=context)
+        return render(request, 'siteMain/service-pavage.html', context=context)
 
 
 def pageServiceResineEpoxy(request):
@@ -635,7 +635,7 @@ def pageServiceResineEpoxy(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -643,10 +643,10 @@ def pageServiceResineEpoxy(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-resine-sol-epoxy.html', context=context)
+                return render(request, 'siteMain/service-resine-sol-epoxy.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-resine-sol-epoxy.html', context=context)
+        return render(request, 'siteMain/service-resine-sol-epoxy.html', context=context)
 
 
 def pageServiceGresCerame(request):
@@ -672,7 +672,7 @@ def pageServiceGresCerame(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -680,10 +680,10 @@ def pageServiceGresCerame(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-terrasse-gres-cerame.html', context=context)
+                return render(request, 'siteMain/service-terrasse-gres-cerame.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-terrasse-gres-cerame.html', context=context)
+        return render(request, 'siteMain/service-terrasse-gres-cerame.html', context=context)
 
 
 def pageServicePierreNaturelle(request):
@@ -709,7 +709,7 @@ def pageServicePierreNaturelle(request):
                 print(myform)
                 print(form.cleaned_data)
                 # return render(request, 'siteMain/index_thank_you.html', context=context)
-                return redirect('/sitemain/thank-you/')
+                return redirect('/siteMain/thank-you/')
 
             else:
                 print('ERROR FORM INVALID')
@@ -717,12 +717,16 @@ def pageServicePierreNaturelle(request):
                 print(form)
                 print('\n')
                 print(form.cleaned_data)
-                return render(request, 'sitemain/service-terrasse-pierre-naturelle.html', context=context)
+                return render(request, 'siteMain/service-terrasse-pierre-naturelle.html', context=context)
     else:
         print('NOT in request POST')
-        return render(request, 'sitemain/service-terrasse-pierre-naturelle.html', context=context)
+        return render(request, 'siteMain/service-terrasse-pierre-naturelle.html', context=context)
+
+# --------------------------  Thank You Pages -------------
 
 
+def thankYou(request):
+    return render(request, 'siteMain/index-thank-you.html')
 #------------------------------ Send E-mail Functions  ----------------------------------#
 
 
