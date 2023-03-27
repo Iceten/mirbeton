@@ -29,4 +29,6 @@ urlpatterns = [
     re_path(r'^cholet/', include('cholet.urls', namespace="cholet")),
     re_path(r'^chatellerault/',
             include('chatellerault.urls', namespace="chatellerault")),
+    re_path(r'^poitiers/',
+            include('poitiers.urls', namespace="poitiers")),
 ]

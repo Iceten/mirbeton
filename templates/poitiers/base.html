@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta_description_block %}
+    {% endblock %}
+    
+    <!-- OneTrust Cookies Consent Notice start for www.mirbeton.com -->
+<!-- <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="4ceabdd4-68b5-43db-9236-bfcca562217d-test" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script> -->
+<!-- OneTrust Cookies Consent Notice end for www.mirbeton.com -->
+    
+<!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW54WD06VS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XW54WD06VS');
+</script> -->
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-ML2GPJC');</script>
+    <!-- End Google Tag Manager -->
+
+    
+    <!-- Meta Domain Verification
+    <meta name="facebook-domain-verification" content="eayaxlcnlqpp7hwik7lep6yj84dz0i" />
+    Meta Pixel Code
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '789597352211323');
+    fbq('track', 'PageView');
+
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=789597352211323&ev=PageView&noscript=1"
+    /></noscript>
+    End Meta Pixel Code -->
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'css/main-style.css'%}">
+    <!-- Slick Style -->
+    <link rel="stylesheet" href="{% static 'slick/slick.css'%}">
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css'%}">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Fonts II-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    {% block title_block %}
+    {% endblock %}
+    <!-- Icon Link -->
+    <link rel = "shortcut icon" href = "{% static 'img/mirbeton-black.png' %}" type = "image/x-icon">
+</head>
+<body>
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML2GPJC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- <div class="section-top-banner">
+        <p class="section-top-banner--para">
+            <a href="#prospect-form"><span>Pour la nouvelle année!</span>Le plan de votre aménagement pour seulement 99 &euro; avec votre devis! <span>Offre valable jusqu'au 31/03/2023</span></a>
+        </p>
+        
+        <input type="checkbox" class="section-top-banner--checkbox" id="top-banner-toggle">
+        <label class="section-top-banner--label" for="top-banner-toggle"><span class="section-top-banner--label__span"></span></label>
+    </div> -->
+
+    <div class="section-top-cta">
+        <div class="section-top-cta--wrap-cta">
+            <svg class="section-top-cta--wrap-cta__link--symbol">
+                <use href="{% static 'img/sprite.svg' %}#phonea"></use>
+            </svg>
+            <a href="tel:0664584884" class="section-top-cta--wrap-cta__phonelink">
+               <span>06 64 58 48 84 - 24h</span>
+            </a>
+         </div>
+        <div class="section-top-cta--wrap-cta">
+            <svg class="section-top-cta--wrap-cta__link--symbol">
+                <use href="{% static 'img/sprite.svg' %}#devis"></use>
+            </svg>
+            <a href="#prospect-form" class="section-top-cta--wrap-cta__link">
+                <span>Devis Gratuit</span>
+            </a>
+         </div>
+    </div>
+
+    <div class="section-navigation">
+        <a href="{% url 'poitiers:indexPoitiers'%}" class="section-navigation--wrapper-logo">
+            <!-- <svg class="section-navigation--wrapper-logo__logo">
+                <use href="{% static 'img/sprite.svg' %}#logo-mirbeton-white"></use>
+            </svg> -->
+            <img class="section-navigation--wrapper-logo__logo"  src="{% static 'img/mirbeton-white.png'%}" alt="logo">
+        </a>
+
+        <div class="section-navigation--checkbox-wrap">
+            <input type="checkbox" class="section-navigation--checkbox-wrap__checkbox" id="side-nav-toggle">
+            <label class="section-navigation--checkbox-wrap__label"for="side-nav-toggle"><span class="section-navigation--checkbox-wrap__label--span"></span></label>
+            <div class="section-navigation--checkbox-wrap__nav-background">
+                &nbsp;
+            </div>
+        </div>
+        
+        <div class="section-navigation--wrapper-side-nav">
+            <div class="section-navigation--wrapper-side-nav__head">
+                <div class="section-navigation--wrapper-side-nav__head--wrapper-logo">
+                    <a href="{% url 'poitiers:indexPoitiers'%}" >
+                      <svg class="section-navigation--wrapper-side-nav__head--wrapper-logo__logo">
+                            <use href="{% static 'img/sprite.svg' %}#logo-mirbeton-black"></use>
+                        </svg>
+                        <!-- <img class="section-navigation--wrapper-side-nav__head--wrapper-logo__logo"  src="/mirbeton/up/img/mirbeton-white.png" alt="logo"> -->
+                    </a>
+                </div>
+                <div class="section-navigation--wrapper-side-nav__head--checkbox-wrap">
+                    <!-- <input type="checkbox" class="section-navigation--wrapper-side-nav__head--checkbox-wrap__checkbox" id="sidenav-toggle"> -->
+                    <label class="section-navigation--wrapper-side-nav__head--checkbox-wrap__label"for="side-nav-toggle"><span class="section-navigation--wrapper-side-nav__head--checkbox-wrap__label--span"></span></label>
+                </div>
+            </div>
+            <div class="section-navigation--wrapper-side-nav__body">
+                <ul class="section-navigation--wrapper-side-nav__body--links">
+                    <li class="section-navigation--wrapper-side-nav__body--links__item"><a href="{% url 'poitiers:indexPoitiers'%}" >accueil</a></li>
+                    <li class="section-navigation--wrapper-side-nav__body--links__item"><a href="{% url 'poitiers:pageServices'%}">services</a></li>
+                    <li class="section-navigation--wrapper-side-nav__body--links__item"><a href="{% url 'poitiers:pageArticles'%}">articles</a></li>
+                    <li class="section-navigation--wrapper-side-nav__body--links__wrap-cta">
+                      <a href="#prospect-form" class="section-navigation--wrapper-side-nav__body--links__wrap-cta--link">
+                      <span>Devis Gratuit</span>
+                      </a>
+                    </li>
+                    <li class="section-navigation--wrapper-side-nav__body--links__wrap-cta">
+                      <a href="#prospect-form" class="section-navigation--wrapper-side-nav__body--links__wrap-cta--link">
+                      <span>06 64 58 48 84</span>
+                      </a>
+                    </li>
+                </ul> 
+            </div>  
+        </div>
+
+        <div class="section-navigation--wrapper-nav">
+            <div class="section-navigation--wrapper-nav__wrapper-logo">
+                <a href="{% url 'poitiers:indexPoitiers'%}" >
+                    <!-- <svg class="section-navigation--wrapper-nav__wrap-symbol--symbol">
+                        <use href="{% static 'img/sprite.svg' %}#logo-mirbeton-black"></use>
+                    </svg> -->
+                    <img class="section-navigation--wrapper-nav__wrapper-logo--logo"  src="{% static 'img/mirbeton-white.png'%}" alt="logo">
+                </a>
+            </div>
+            <ul class="section-navigation--wrapper-nav__links">
+                      <li class="section-navigation--wrapper-nav__links--item"><a href="{% url 'poitiers:indexPoitiers'%}" >accueil</a></li>
+                      <li class="section-navigation--wrapper-nav__links--item"><a href="{% url 'poitiers:pageServices'%}">services</a></li>
+                      <li class="section-navigation--wrapper-nav__links--item"><a href="{% url 'poitiers:pageArticles'%}">articles</a></li>
+                      <li class="section-navigation--wrapper-nav__links--wrap-cta">
+                        <a href="#prospect-form" class="section-navigation--wrapper-nav__links--wrap-cta__link">
+                        <span>Devis Gratuit</span>
+                        </a>
+                      </li>
+                      <li class="section-navigation--wrapper-nav__links--wrap-cta">
+                        <a href="tel:0664584884" class="section-navigation--wrapper-nav__links--wrap-cta--link">
+                        <span>06 64 58 48 84</span>
+                        </a>
+                      </li>          
+            </ul> 
+        </div>
+    </div>
+
+{% block body_block %}
+{% endblock %}
+<div class="section-footer">
+    <a href="{% url 'poitiers:indexPoitiers'%}" class="section-footer--wrapper-logo">
+     <!-- <svg class="section-footer--wrapper-symbol--symbol">
+            <use href="{% static 'img/sprite.svg' %}#logo-mirbeton-white"></use>
+     </svg> -->
+     <img class="section-footer--wrapper-logo__logo"  src="{% static 'img/mirbeton-white.png'%}" alt="logo">
+    </a>
+    <div class="section-footer--wrapper-content">
+        <div class="section-footer--wrapper-content__coord">
+            <!-- <h2>mir beton</h2> -->
+            <div class="wrap-coord">
+                <svg class="wrap-coord--symbol">
+                    <use href="{% static 'img/sprite.svg' %}#phonea"></use>
+                </svg>
+                <a href="tel:0664584884" class="wrap-coord--text">
+                   <span>06 64 58 48 84 - 24h</span>
+                </a>
+            </div>
+            <div class="wrap-coord">
+                <svg class="wrap-coord--symbol">
+                    <use href="{% static 'img/sprite.svg' %}#email"></use>
+                </svg>
+                <a href="#" class="wrap-coord--text" id="mail-address">
+                   <span>mirbetonfrance@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <ul class="section-footer--wrapper-links">
+        <li class="section-footer--wrapper-links__item"><a href="{% url 'poitiers:politique_conf'%}">
+            Potitique de confidentialité</a>
+        </li>
+        <li class="section-footer--wrapper-links__item"><a href="{% url 'poitiers:mentions_lega'%}">Mentions légales</a></li>
+        <li class="section-footer--wrapper-links__item"><a href="{% url 'poitiers:politique_cook'%}">Politique de cookies</a></li>
+        <li class="section-footer--wrapper-links__wrap-symbol"><a href="#" >
+            <svg class="section-footer--wrapper-links__wrapsymbol--symbol">
+                <use href="{% static 'img/sprite.svg' %}#facebook"></use>
+            </svg></a>
+        </li>
+        <!-- <li class="section-footer--wrapper-links__wrap-symbol"><a href="#" >
+            <svg class="section-footer--wrapper-links__wrapsymbol--symbol">
+                <use href="{% static 'img/sprite.svg' %}#instagram"></use>
+            </svg></a>
+        </li>
+        <li class="section-footer--wrapper-links__wrap-symbol"><a href="#" >
+            <svg class="section-footer--wrapper-links__wrapsymbol--symbol">
+                <use href="{% static 'img/sprite.svg' %}#pinterest"></use>
+            </svg></a>
+        </li> -->
+    </ul> 
+    <p class="section-footer--wrapper-copyright">Copyright &copy; 2022 Lead Insight Marketing all right reserved</p>
+</div>
+
+    <!-- JQuery - JS-->
+    <script src="{% static 'js/jquery.js'%}"></script>
+
+    <!-- Slick - JS-->
+    <script type="text/javascript" src="{% static 'slick/slick.min.js'%}"></script>
+    <script src="{% static 'js/slick-setting-reviews.js'%}" ></script>
+    <script  src="{% static 'js/slick-setting-articles.js'%}"></script>
+    <script  src="{% static 'js/slick-setting-gallery-bis.js'%}"></script>
+
+    <!-- Main - JS-->
+    <script src="{% static 'js/main-style.js'%}"></script>
+    
+    <!-- DataLayer - JS-->
+    <script src="{% static 'js/datalayer.js'%}"></script>
+
+
+    </body>
+</html>
