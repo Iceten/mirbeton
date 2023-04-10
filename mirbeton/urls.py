@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 from django.conf.urls import include
+from django.contrib.sitemaps.views import sitemap
 
 from siteMain import views
 # from siteLP01 import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
