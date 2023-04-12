@@ -25,49 +25,7 @@
                 <h1 class="section-content--container__wrap-txt--subtitle" style='text-align: center;'>
                     Merci,un de nos agents va prendre contact avec vous. 
                 </h1>
-            </div>    
-
-            <div class="section-content--container__wrapper-form">
-                <div class="subsection-prospect-form" id="prospect-form">
-                    <div class="subsection-prospect-form--wrapper-header">
-                        <p class="subsection-prospect-form--wrapper-header__title">Devis Gratuit en un Insant</p>
-                        <ul class="subsection-prospect-form--wrap-benefit-list">
-                            <li class="subsection-prospect-form--wrap-benefit-list__item">Devis sans engagement</li>
-                            <li class="subsection-prospect-form--wrap-benefit-list__item">Inspection Gratuite</li>
-                        </ul>
-                        <p class="subsection-prospect-form--wrapper-header__promo">
-                            * Rendu 2D/3D à 100 euro avant le 30/04/2023
-                        </p>
-                    </div>
-                    <div class="subsection-prospect-form--wrapper-form">
-                        <form class="subsection-prospect-form--wrapper-form__form" method="POST">
-                            <div class="subsection-prospect-form--wrapper-form__form--wrapper-radio">
-                                <p class="subsection-prospect-form--wrapper-form__form--wrapper-radio__desc">Quel type de travaux?</p>
-                                {{ lead_form.work_type}}
-                            </div>
-
-                            <div class="subsection-prospect-form--wrapper-form__form--wrapper-select">
-                                <p class="subsection-prospect-form--wrapper-form__form--wrapper-select__desc" for="work-surface">Quel Surface?</p>
-                                <div class="subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices">
-                                    {{ lead_form.surface}} 
-                                </div>
-                            </div>
-
-                            {{ lead_form.first_name}}
-                            {{ lead_form.last_name}}
-                            {{ lead_form.email}}
-                            {{ lead_form.phone}}
-                            {{ lead_form.zipcode}}
-                            {{ lead_form.lead_consult_form }}
-                            <input class="subsection-prospect-form--wrapper-form__form--submit" type="submit" value="Recevoir mon devis">
-                            {% csrf_token %}
-                        </form>
-                        <div class="subsection-prospect-form--wrapper-form__wrap-policy">
-                            <p class="subsection-prospect-form--wrapper-form__wrap-policy--para">En renseignant vos informations, vous acceptez de recevoir nos communications par courrier électronique et télépphone et vous prenez connaissance de notre <a href="" class="nakedLink">Politique de confidentialité</a>. Vous pouvez vous désinscrire à tout moment avec le lien fourni dans chaque e-mail ou en envoyant un message à leadinsightmarketing@gmail.com.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>             
+            </div>           
 
             <div class="section-content--container__wrapper-img-full">
                 <figure>
