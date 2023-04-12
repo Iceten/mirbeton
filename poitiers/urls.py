@@ -51,10 +51,14 @@ urlpatterns = [
             views.pageServiceGresCerame, name='pageServiceGresCerame'),
     re_path(r'^terrasse-pierre-naturelle-poitiers/$',
             views.pageServicePierreNaturelle, name='pageServicePierreNaturelle'),
-
     # -------------------------     Thank You Pages       --------------------------
     re_path(r'^thank-you/$', views.thankYouPoitiers,
             name='thankYouPoitiers'),
+    # -------------------------     Promotion Pages       --------------------------
+    re_path(r'^promotion-du-printemps/$',
+            views.pagePoitiersPromotionDuPrintemps, name='pagePoitiersPromotionDuPrintemps'),
+    re_path(r'^promotion-du-printemps-thank-you/$', views.thankYouPoitiersPromotionDuPrintemps,
+            name='thankYouPoitiersPromotionDuPrintemps'),
     # -------------------------     GDPR Pages       --------------------------
     re_path(r'^mentionslegales/$', views.mentions_lega, name='mentions_lega'),
     re_path(r'^politiquedeconfidentialite/$',

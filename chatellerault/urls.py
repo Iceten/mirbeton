@@ -55,6 +55,11 @@ urlpatterns = [
     # -------------------------     Thank You Pages       --------------------------
     re_path(r'^thank-you/$', views.thankYouChatellerault,
             name='thankYouChatellerault'),
+    # -------------------------     Promotion Pages       --------------------------
+    re_path(r'^promotion-du-printemps/$',
+            views.pageChatelleraultPromotionDuPrintemps, name='pageChatelleraultPromotionDuPrintemps'),
+    re_path(r'^promotion-du-printemps-thank-you/$', views.thankYouChatelleraultPromotionDuPrintemps,
+            name='thankYouChatelleraultPromotionDuPrintemps'),
     # -------------------------     GDPR Pages       --------------------------
     re_path(r'^mentionslegales/$', views.mentions_lega, name='mentions_lega'),
     re_path(r'^politiquedeconfidentialite/$',

@@ -726,7 +726,7 @@ def pageServicePierreNaturelle(request):
 
 
 def thankYou(request):
-    return render(request, 'siteMain/index-thank-you.html')
+    return render(request, 'siteMain/inctdex-thank-you.html')
 #------------------------------ Send E-mail Functions  ----------------------------------#
 
 

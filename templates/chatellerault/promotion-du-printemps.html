@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% extends "siteMain/base.html" %}
+{% extends "chatellerault/base.html" %}
 {% load static %}
 
 {% block meta_description_block %}
@@ -14,119 +14,115 @@
 
     <div class="section-headline">
         <div class="section-headline--wrapper">
-            <h2 class="section-headline--wrapper__subtitle">Envie d'une rénovation de béton à Antony?</h2>
-            <h1 class="section-headline--wrapper__title">Nous vous accompagnons à Poitiers dans vos projets d'aménagement d'intérieur et d'extérieur</h1>
+            <h2 class="section-headline--wrapper__subtitle">Envie d'une rénovation à Châtellerault?</h2>
+            <h1 class="section-headline--wrapper__title">Nous vous accompagnons à Châtellerault dans vos projets d'aménagement d'intérieur et d'extérieur </h1>
         </div>
     </div>
 
     <div class="section-content">
          <div class="section-content--container">
-            <div class="section-content--container__wrap-txt">
-                <h1 class="section-content--container__wrap-txt--subtitle" style='text-align: center;'>
-                    Merci,un de nos agents va prendre contact avec vous. 
-                </h1>
-            </div>           
+            <div class="section-content--container__wrapper-form">
+                <div class="subsection-prospect-form" id="prospect-form">
+                    <div class="subsection-prospect-form--wrapper-header">
+                        <p class="subsection-prospect-form--wrapper-header__title">Promotion du Printemps</p>
+                        <ul class="subsection-prospect-form--wrap-benefit-list">
+                            <li class="subsection-prospect-form--wrap-benefit-list__item">Visuels Intérieur</li>
+                            <li class="subsection-prospect-form--wrap-benefit-list__item">Visuels Extérieur</li>
+                        </ul>
+                        <p class="subsection-prospect-form--wrapper-header__promo">
+                            * Rendu 2D/3D à 199 euro avant le 30/04/2023
+                        </p>
+                    </div>
+                    <div class="subsection-prospect-form--wrapper-form">
+                        <form class="subsection-prospect-form--wrapper-form__form" method="POST">
 
-            <div class="section-content--container__wrapper-img-full">
-                <figure>
-                    <a href="{% static 'img/mirbeton-009-life-of-pix-2469.jpg' %}" 
-                    data-pswp-width="2000" 
-                    data-pswp-height="1500" 
-                    target="_blank">
-                        <img src="{% static 'img/mirbeton-009-life-of-pix-2469.jpg' %}" alt="">
-                    </a>                     
-                </figure> 
-            </div>
-
-            <div class="section-content--container__wrap-txt">
-                <h2 class="section-content--container__wrap-txt--title">
-                Notre entreprise et ses artisans spécialistes du béton  vous proposent leurs services à Antony
-                </h2>
-    
-                <p class="section-content--container__wrap-txt--para">
-                Notre entreprise comme d'autres spécialistes du béton fournissent un large panel de services de béton comprenant la livraison du béton au mètre cube, la pose de dalles de béton,la réalisation de béton imprimé et autres bétons décoratifs. Vous pouvez ainsi nous demander de couler une dalle de béton ou réaliser des fondations en béton.
-                </p>
-    
-                <p class="section-content--container__wrap-txt--para">
-                    En tant qu'expert nous souhaitons mettre à votre disposition nos services de professionnels du béton à Antony. Vous pouvez nous confier la réalisation de votre chape liquide. Notre objectif est de devenir le meilleur chapiste à Antony. Nous travaillons avec les particuliers, les entreprises et les collectivités locales. Il vous suffit de faire une demande de devis de béton pour Antony en nous appelant ou en remplissant le formulaire.
-                </p>
-
-                <p class="section-content--container__wrap-txt--para">
-                Nous intervenons en tant qu'artisan du béton à Antony et ses environs. Nous mettons à votre service notre savoir-faire et notre expérience de qualité. Nous vous accompagnons dans votre projet de béton à Antony. Vous pouvez nous faire confiance pour votre projet d’aménagement intérieur et extérieur. Nous vous accompagnons de la conception de votre projet jusqu'à la réalisation de celui-ci en vous apportant les meilleures solutions techniques pour arriver au meilleur résultat possible.  Notre premier objectif est de réaliser votre vision et pour cela nos artisans du béton mettent la compréhension et l'écoute en priorité.
-                </p>
-            </div>
-
-            <div class="section-content--container__wrapper-img-full">
-                <figure>
-                    <a href="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" 
-                    data-pswp-width="2000" 
-                    data-pswp-height="1500" 
-                    target="_blank">
-                        <img src="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" alt="" style="object-position: 70% 70% !important">
-                    </a>                     
-                </figure> 
-            </div>
-
-            <div class="section-content--container__wrap-txt">
-                <p class="section-content--container__wrap-txt--para">
-                "Entreprise du béton à Antony" est probablement la dernière chose que vous auriez pensé rechercher sur le web. Peut-être que vous souhaitez enfin réaliser ce nouveau parking où cette allée ou encore aménager votre patio pour la saison à venir. Vous remarquerez que le ciment dans ces différentes formes est une commodité. Notre objectif est de vous apporter de la valeur en amont et de vous montrer que travailler avec nous et mieux que simplement appeler différentes sociétés de béton.
-                </p>
-
-                <p class="section-content--container__wrap-txt--para">
-                Si vous êtes sur le marché à la recherche de quelque chose en rapport avec le ciment vous frappez à la bonne porte. Nos artisans offrent des services aux particuliers comme aux professionnels et collectivités locales. Que vous ayez acheté une nouvelle maison et que vous ayez besoin de rénover un parking, ou que vous souhaitez simplement une estimation pour un projet de rêve, n'hésitez pas à nous contacter. Nos experts pourront décorer votre ciment, faire la réparation de votre maçonnerie, couler des fondations et même créer votre allée ou chemin.
-                </p>
-            </div>
-
-            <div class="section-content--container__wrap-txt">
-                <div class="section-content--container__wrap-txt--btn-cta">
-                    <svg class="btn-cta--symbol">
-                        <use href="{% static 'img/sprite.svg' %}#calendar"></use>
-                    </svg>
-                    <a href="#prospect-form" class="btn-cta--text">
-                        <span> Evaluer le montant de mon projet</span>
-                    </a>
+                            {{ lead_form.first_name}}
+                            {{ lead_form.last_name}}
+                            {{ lead_form.email}}
+                            {{ lead_form.phone}}
+                            {{ lead_form.zipcode}}
+                            {{ lead_form.lead_consult_form }}
+                            <input class="subsection-prospect-form--wrapper-form__form--submit" type="submit" value="Avancer mon projet">
+                            {% csrf_token %}
+                        </form>
+                        <div class="subsection-prospect-form--wrapper-form__wrap-policy">
+                            <p class="subsection-prospect-form--wrapper-form__wrap-policy--para">En renseignant vos informations, vous acceptez de recevoir nos communications par courrier électronique et télépphone et vous prenez connaissance de notre <a href="" class="nakedLink">Politique de confidentialité</a>. Vous pouvez vous désinscrire à tout moment avec le lien fourni dans chaque e-mail ou en envoyant un message à leadinsightmarketing@gmail.com.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>             
+
+        <div class="section-content--container__wrapper-img-full">
+            <figure>
+                <a href="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" 
+                data-pswp-width="2000" 
+                data-pswp-height="1500" 
+                target="_blank">
+                    <img src="{% static 'img/mirbeton-007-julia-kuzenkov-1974596.jpg' %}" alt="" style="object-position: 70% 70% !important">
+                </a>                     
+            </figure> 
+        </div>
+
+        <div class="section-content--container__wrap-txt">
+            <p class="section-content--container__wrap-txt--para">
+                Peut-être que vous souhaitez enfin réaliser ce nouveau parking où cette allée ou encore aménager votre patio pour la saison à venir. Notre objectif est de vous apporter de la valeur en amont et de vous montrer que travailler avec nous et mieux que simplement appeler différentes sociétés de béton.
+            </p>
+
+            <p class="section-content--container__wrap-txt--para">
+            Si vous êtes à la recherche de professionnels spécialisés dans la rénovation et l'aménagement vous frappez à la bonne porte. Nos artisans offrent des services aux particuliers comme aux professionnels et collectivités locales. Que vous ayez acheté une nouvelle maison et que vous ayez besoin de rénover un parking, ou que vous souhaitez simplement une estimation pour un projet de rêve, n'hésitez pas à nous contacter. Nos experts pourront vous aider à décorer votre espace, faire la réparation de votre maçonnerie, couler des fondations et même créer votre allée ou chemin.
+            </p>
+        </div>
+
+        <div class="section-content--container__wrap-txt">
+            <div class="section-content--container__wrap-txt--btn-cta">
+                <svg class="btn-cta--symbol">
+                    <use href="{% static 'img/sprite.svg' %}#calendar"></use>
+                </svg>
+                <a href="#prospect-form" class="btn-cta--text">
+                    <span> Evaluer le montant de mon projet</span>
+                </a>
             </div>
+        </div>
         </div>
     </div>
 
     <div class="section-gallery">
         <div class="section-gallery--body">
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-104.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-105.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-106.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-107.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-108.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-109.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-110.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-111.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-112.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-113.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-115.jpg' %}" alt="">
             </div>
             <div class="section-gallery--body__wrapper-img">
-                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/arcwind--OKp-rhSWE4-unsplash.jpg' %}" alt="">
+                <img class="section-gallery--body__wrapper-img--img" src="{% static 'img/mirbeton-116.jpg' %}" alt="">
             </div>
         </div>
        
@@ -451,7 +447,7 @@
                 <div class="section-articles--wrapper-cards__card--wrap-text">
                     <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part I?</h2>
                 
-                    <a href="{% url 'siteMain:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+                    <a href="{% url 'chatellerault:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
                 </div>
             </div> 
             <div class="section-articles--wrapper-cards__card">
@@ -459,7 +455,7 @@
                 <div class="section-articles--wrapper-cards__card--wrap-text">
                     <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part II?</h2>
                 
-                    <a href="{% url 'siteMain:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+                    <a href="{% url 'chatellerault:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
                 </div>
             </div> 
             <div class="section-articles--wrapper-cards__card">
@@ -467,7 +463,7 @@
                 <div class="section-articles--wrapper-cards__card--wrap-text">
                     <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part III?</h2>
                 
-                    <a href="{% url 'siteMain:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+                    <a href="{% url 'chatellerault:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
                 </div>
             </div> 
             <div class="section-articles--wrapper-cards__card">
@@ -475,7 +471,7 @@
                 <div class="section-articles--wrapper-cards__card--wrap-text">
                     <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part IV?</h2>
                 
-                    <a href="{% url 'siteMain:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+                    <a href="{% url 'chatellerault:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
                 </div>
             </div>   
         </div>

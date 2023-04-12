@@ -20,10 +20,10 @@ class LeadConsultForm(forms.ModelForm):
                   'last_name', 'email', 'phone', 'zipcode')
 
     work_type = forms.CharField(widget=forms.RadioSelect(choices=work_type_choices, attrs={
-                                'class': 'subsection-prospect-form--wrapper-form__form--wrapper-radio__wrap-choices'}))
+                                'class': 'subsection-prospect-form--wrapper-form__form--wrapper-radio__wrap-choices'}), required=False)
 
     surface = forms.CharField(widget=forms.Select(choices=surface_choices, attrs={
-                              'class': 'subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices'}))
+                              'class': 'subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices'}), required=False)
     first_name = forms.CharField(widget=forms.TextInput(
         attrs={'class': 'subsection-prospect-form--wrapper-form__form--firstname', 'area-required': 'true', 'data-msg-required': 'Merci d\'indiquer votre prenom s\'il vous plaît', 'placeholder': " PRENOM "}), label='Prenom')
 
