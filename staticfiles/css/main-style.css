@@ -2340,7 +2340,7 @@ body {
 }
 
 .subsection-prospect-form {
-  background-color: var(--color-quaternary);
+  background: var(--overlay-gradient-5);
   border-radius: 2rem;
   box-shadow: 0.2rem 0.2rem 0.2rem 0 var(--color-grey-dark-3);
   padding: 1rem;
@@ -2367,12 +2367,12 @@ body {
 .subsection-prospect-form--wrapper-header__subtitle {
   font-size: 3.5rem;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-white-1);
 }
 .subsection-prospect-form--wrapper-header__promo {
   font-size: 3.5rem;
   font-weight: 800;
-  color: var(--color-red-2);
+  color: var(--color-quaternary);
   margin-bottom: 1rem;
 }
 .subsection-prospect-form--wrapper-form {
@@ -2396,7 +2396,6 @@ body {
   font-size: 3rem;
   font-weight: 800;
   color: var(--color-white-1);
-  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 .subsection-prospect-form--wrapper-form__form--wrapper-radio__wrap-choices {
@@ -2407,7 +2406,6 @@ body {
 .subsection-prospect-form--wrapper-form__form--wrapper-radio__wrap-choices * label {
   font-size: 3rem;
   color: var(--color-white-1);
-  color: var(--color-primary);
 }
 .subsection-prospect-form--wrapper-form__form--wrapper-radio__wrap-choices * label input {
   display: inline-block;
@@ -2420,7 +2418,7 @@ body {
 .subsection-prospect-form--wrapper-form__form--wrapper-select__desc {
   font-size: 3rem;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-white-1);
   margin-bottom: 1rem;
 }
 .subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices * {
@@ -2443,8 +2441,10 @@ body {
 }
 .subsection-prospect-form--wrapper-form__form--submit {
   background-color: var(--color-secondary);
-  color: var(--color-quaternary);
-  font-size: 2rem;
+  background-color: var(--color-green-2);
+  color: var(--color-white-1);
+  height: 4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
   border: none;
@@ -2466,7 +2466,7 @@ body {
 .subsection-prospect-form--wrapper-form__wrap-policy--para {
   margin-top: 1.5rem;
   font-size: 1.8rem;
-  color: var(--color-tertiary);
+  color: var(--color-grey-light-1);
   font-weight: 400;
 }
 .subsection-prospect-form--wrap-benefit-list {
@@ -2476,7 +2476,6 @@ body {
   font-size: 3rem;
   font-weight: 800;
   list-style: none;
-  color: var(--color-tertiary);
   color: var(--color-green-2);
   display: flex;
   justify-content: space-between;
