@@ -1696,29 +1696,9 @@ body {
   position: absolute;
   left: 0;
 }
-@media screen and (max-width: 1800px) {
-  .section-headline.short-headline .section-headline--wrapper__title {
-    font-size: 3.3rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .section-headline.short-headline .section-headline--wrapper__title {
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 800px) {
-  .section-headline.short-headline .section-headline--wrapper__title {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 800px) {
-  .section-headline.short-headline .section-headline--wrapper__title {
-    font-size: 2.5rem;
-  }
-}
 @media screen and (max-width: 600px) {
   .section-headline.short-headline .section-headline--wrapper__title {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 
