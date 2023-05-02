@@ -1663,7 +1663,7 @@ body {
 }
 
 .section-headline.short-headline {
-  height: 28vh;
+  height: 25vh;
 }
 .section-headline.short-headline .section-headline--wrapper {
   transform: none !important;
@@ -1682,7 +1682,7 @@ body {
   width: fit-content;
   margin-top: 1rem;
   padding-left: 2rem;
-  font-size: 3.8rem;
+  font-size: 4rem;
   font-weight: 600;
   text-transform: uppercase;
   align-self: start;
@@ -1707,9 +1707,11 @@ body {
   }
 }
 @media screen and (max-width: 800px) {
-  .section-headline.short-headline {
-    height: 26vh;
+  .section-headline.short-headline .section-headline--wrapper__title {
+    font-size: 2.5rem;
   }
+}
+@media screen and (max-width: 800px) {
   .section-headline.short-headline .section-headline--wrapper__title {
     font-size: 2.5rem;
   }

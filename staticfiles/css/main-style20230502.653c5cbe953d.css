@@ -1488,7 +1488,7 @@ body {
 }
 
 .section-headline {
-  background-image: var(--overlay-2-extra-light), url(../img/mirbeton-002-bilal-mansuri-13041118.jpg);
+  background-image: var(--overlay-2-extra-light), url("../img/mirbeton-002-bilal-mansuri-13041118.b8a9f5faf201.jpg");
   background-position: center center;
   background-size: cover;
   transition: 0.4s ease;
@@ -1663,7 +1663,7 @@ body {
 }
 
 .section-headline.short-headline {
-  height: 28vh;
+  height: 25vh;
 }
 .section-headline.short-headline .section-headline--wrapper {
   transform: none !important;
@@ -1682,7 +1682,7 @@ body {
   width: fit-content;
   margin-top: 1rem;
   padding-left: 2rem;
-  font-size: 3.8rem;
+  font-size: 4rem;
   font-weight: 600;
   text-transform: uppercase;
   align-self: start;
@@ -1707,9 +1707,11 @@ body {
   }
 }
 @media screen and (max-width: 800px) {
-  .section-headline.short-headline {
-    height: 26vh;
+  .section-headline.short-headline .section-headline--wrapper__title {
+    font-size: 2.5rem;
   }
+}
+@media screen and (max-width: 800px) {
   .section-headline.short-headline .section-headline--wrapper__title {
     font-size: 2.5rem;
   }
@@ -2508,7 +2510,7 @@ body {
   align-items: center;
 }
 .subsection-prospect-form--wrap-benefit-list__item::before {
-  background-image: url(../img/checkbox-green.png);
+  background-image: url("../img/checkbox-green.459a80936fc0.png");
   background-size: contain;
   background-repeat: no-repeat;
   content: "";

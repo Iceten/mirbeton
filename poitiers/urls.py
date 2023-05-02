@@ -51,6 +51,8 @@ urlpatterns = [
             views.pageServiceGresCerame, name='pageServiceGresCerame'),
     re_path(r'^terrasse-pierre-naturelle-poitiers/$',
             views.pageServicePierreNaturelle, name='pageServicePierreNaturelle'),
+    re_path(r'^terrasse-pierre-naturelle-gres-cerame-poitiers/$',
+            views.pageServicePierreNaturelleGresCerame, name='pageServicePierreNaturelleGresCerame'),
     re_path(r'^amenagement-exterieur-poitiers/$',
             views.pageServiceAmenagementExterieur, name='pageServiceAmenagementExterieur'),
     re_path(r'^terrasse-bois-poitiers/$',
