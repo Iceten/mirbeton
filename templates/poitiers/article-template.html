@@ -33,8 +33,8 @@
                </figure> 
            </div>
 
+           <!-- Section Article -->
            <div class="section-content--container__wrap-txt">
-                
                 <h2 class="section-content--container__wrap-txt--title">
                     title
                 </h2>
@@ -46,20 +46,36 @@
                 <p class="section-content--container__wrap-txt--para">
                 para
                 </p>
+                
+                <p class="section-content--container__wrap-txt--para-bold">
+                para
+                </p>
 
                 <a href="{% url 'poitiers:indexPoitiers'%}">link</a>
-        </div>
+           </div>
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-101.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-101.jpg' %}" alt="" style="object-position: 70% 70% !important">
+                   </a>                     
+               </figure> 
+           </div>
+           <!-- Evaluer mon projet -->
+           <div class="section-content--container__wrap-txt">
+               <div class="section-content--container__wrap-txt--btn-cta">
+                   <svg class="btn-cta--symbol">
+                       <use href="{% static 'img/sprite.svg' %}#calendar"></use>
+                   </svg>
+                   <a href="#prospect-form" class="btn-cta--text">
+                       <span> Evaluer le montant de mon projet</span>
+                   </a>
+               </div>
+           </div>
 
-        <div class="section-content--container__wrapper-img-full">
-            <figure>
-                <a href="{% static 'img/mirbeton-101.jpg' %}" 
-                data-pswp-width="2000" 
-                data-pswp-height="1500" 
-                target="_blank">
-                    <img src="{% static 'img/mirbeton-101.jpg' %}" alt="" style="object-position: 70% 70% !important">
-                </a>                     
-            </figure> 
-        </div>
+    
 
        </div>
    </div>
