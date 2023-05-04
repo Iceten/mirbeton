@@ -798,6 +798,43 @@ def pageServiceTravauxGrosOeuvre(request):
         print('NOT in request POST')
         return render(request, 'poitiers/service-travaux-gros-oeuvre.html', context=context)
 
+
+def pageServiceTerrasseCarrelage(request):
+    newLead = LeadConsultForm()
+    context = {
+        'lead_form': newLead,
+    }
+
+    if request.method == 'POST':
+        print('in request POST')
+        if 'lead_consult_form' in request.POST:
+            print('in lead_consult_form')
+            # We populate the form with previous index page entry
+            form = LeadConsultForm(request.POST)
+
+            if form.is_valid():
+                print('in form.is_valid')
+                print('first sending notification e-mail')
+                send_email_lead_consult(form, request.META)
+                print('Saving now in DB...')
+                myform = form.save(commit=True)
+                # sending notification to admin
+                print(myform)
+                print(form.cleaned_data)
+                # return render(request, 'siteMain/index_thank_you.html', context=context)
+                return redirect('/poitiers/thank-you/')
+
+            else:
+                print('ERROR FORM INVALID')
+                print('Form is not saved in db')
+                print(form)
+                print('\n')
+                print(form.cleaned_data)
+                return render(request, 'poitiers/service-terrasse-carrelage.html', context=context)
+    else:
+        print('NOT in request POST')
+        return render(request, 'poitiers/service-terrasse-carrelage.html', context=context)
+
 # -------------------------- Articles Pages -------------
 
 
