@@ -67,6 +67,8 @@ urlpatterns = [
             views.pageServiceTerrasseAlleePavee, name='pageServiceTerrasseAlleePavee'),
     re_path(r'^terrasse-beton-pierre-poitiers/$',
             views.pageServiceTerrasseBetonPierre, name='pageServiceTerrasseBetonPierre'),
+    re_path(r'^entree-garage-poitiers/$',
+            views.pageServiceEntreeGarage, name='pageServiceEntreeGarage'),
 
     # -------------------------     Thank You Pages       --------------------------
     re_path(r'^thank-you/$', views.thankYouPoitiers,

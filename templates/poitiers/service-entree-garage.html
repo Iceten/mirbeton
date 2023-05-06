@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+{% extends "poitiers/base.html" %}
+{% load static %}
+
+{% block meta_description_block %}
+<meta name="description" content="Découvrez dans notre guide complet les différents types de sols pour entrée de garage, les revêtements les plus résistants pour un parking extérieur, le coût pour leur installation et l'entretien nécessaire. Obtenez également des conseils pour choisir un sol carrossable durable, ainsi que des idées d'aménagement pour votre allée de garage. Notre entreprise MIR Béton à Poitiers fournit des services de qualité avec l'aide de nos artisans professionnels pour répondre à tous vos besoins en matière de terrassements, de dalles et pavés, de bétons décoratifs ou désactivés, de résine de sol, de pierre naturelle et de grès cérame.">
+{% endblock%}
+
+{% block title_block %}
+<title>Le guide complet des Sols Carrossables et Entrée de garage | Types de sols, revêtements, prix et entretien | MIR Béton Poitiers</title>
+{% endblock%}
+
+{% block body_block %}
+
+    <div class="section-headline short-headline">
+        <div class="section-headline--wrapper">
+            <!-- <h2 class="section-headline--wrapper__subtitle">Vous souhaitez rénover votre toiture?</h2> -->
+            <h1 class="section-headline--wrapper__title">Le guide complet des Sols Carrossables et Entrée de garage</h1>
+        </div>
+    </div>
+
+    <div class="section-content">
+        <div class="section-content--container">   
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-003-curtis-adams-3935333.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-146.jpg' %}" alt="">
+                   </a>                     
+               </figure> 
+           </div>
+    
+           <!-- Section Article -->
+           <div class="section-content--container__wrap-txt">
+            <p class="section-content--container__wrap-txt--para">Chez MIR Béton, nous savons que l&#39;<a href="{% url 'poitiers:pageServiceAmenagementExterieur'%}"
+                >aménagement extérieur</a> de votre maison est aussi important que l&#39;intérieur. C&#39;est pourquoi nous accompagnons nos clients dans la conception, la réalisation et l&#39;entretien de leurs allées de garage et entrées de garage. Avec un revêtement de sol carrossable de qualité, vous pouvez améliorer votre extérieur tout en garantissant une sécurité maximale pour votre véhicule.</p>
+            <h2 class="section-content--container__wrap-txt--title">Les différents types de sols carrossables</h1>
+            <h2 class="section-content--container__wrap-txt--subtitle">Les revêtements de sol en béton</h2>
+            <p class="section-content--container__wrap-txt--para">Le revêtement de sol en béton est une option très courante pour les allées et les entrées de garage. C&#39;est un choix esthétique et durable, mais également facile à entretenir. Les différents types de béton disponibles sont :</p>
+            <ul class="section-content--container__wrap-txt--list">
+            <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para"><strong>Le béton désactivé</strong> est un béton dans lequel la couche de surface est retirée pour obtenir une texture rugueuse et granuleuse. Cette méthode permet de créer des motifs uniques et une surface antidérapante pour une meilleure sécurité.</p>
+            </li>
+            <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para"><strong>Le béton imprimé</strong> est un béton décoratif qui imite l&#39;aspect du pavé, de la <a href="{% url 'poitiers:pageServicePierreNaturelleGresCerame'%}"
+                >pierre naturelle</a> ou de la brique. C&#39;est un choix très apprécié pour les allées de garage.</p>
+            </li>
+            <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para"><strong>Le béton décoratif</strong> est un béton teinté et poli pour obtenir un aspect brillant. C&#39;est un choix de revêtement de sol très moderne et élégant.</p>
+            </li>
+            </ul>
+            <h2 class="section-content--container__wrap-txt--subtitle">Les revêtements de sol en enrobé</h2>
+            <p class="section-content--container__wrap-txt--para">L&#39;enrobé est un mélange d&#39;agrégats et de bitume qui est appliqué sur une base en béton. Les différents types d&#39;enrobé sont :</p>
+            <ul class="section-content--container__wrap-txt--list">
+            <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para"><strong>L&#39;enrobé à chaud</strong> C&#39;est un choix populaire pour les parkings en extérieur et les routes.</p>
+            </li>
+            <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para"><strong>L&#39;enrobé à froid</strong> est un enrobé spécialement conçu pour être appliqué à des températures plus basses. Il est plus souple que l&#39;<a href="{% url 'poitiers:pageServiceBitumeEnrobe'%}"
+                >enrobé à chaud</a>, mais également moins résistant.</p>
+            </li>
+            </ul>
+            <h2 class="section-content--container__wrap-txt--subtitle">Les revêtements de sol en résine</h2>
+            <p class="section-content--container__wrap-txt--para">Le revêtement de sol en résine est une option moderne . Il est composé de <a href="{% url 'poitiers:pageServiceResineEpoxy'%}"
+                >résines époxy </a> mélangée à des granulats de pierre ou de marbre. Les avantages de ce choix de revêtement de sol sont qu&#39;il est durable, antidérapant et facile à entretenir.</p>
+            <h2 class="section-content--container__wrap-txt--subtitle">Les revêtements de sol en pavé et en pierre naturelle</h2>
+            <p class="section-content--container__wrap-txt--para">Les <a href="{% url 'poitiers:pageServicePavageDallage'%}"
+                >pavés</a> et les pierres naturelles sont des choix de revêtement de sol haut de gamme pour les allées de garage et les entrées de garage. Les pavés sont très durables et résistants, tandis que les <a href="{% url 'poitiers:pageServiceTerrasseCarrelage'%}"
+                >pierres naturelles</a> offrent une esthétique unique et naturelle.</p>
+            <h2 class="section-content--container__wrap-txt--subtitle">Les revêtements de sol en gravier stabilisé et en dalles alvéolaires</h2>
+            <p class="section-content--container__wrap-txt--para">Les revêtements de sol en gravier stabilisé et en dalles alvéolaires sont des choix écologiques et économiques pour les allées de garage et les entrées de garage. Le gravier stabilisé est un mélange de gravier et de liant qui offre une surface antidérapante. Les dalles alvéolaires sont des dalles en béton perforées qui permettent l&#39;infiltration d&#39;eau de pluie.</p>
+            <p class="section-content--container__wrap-txt--para">Chez MIR Béton, nos professionnels à Poitiers vous guideront pour choisir le revêtement de sol carrossable le plus adapté à vos besoins et votre budget.</p>
+           
+            
+            
+           </div>
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-161.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-161.jpg' %}" alt="" style="object-position: 70% 70% !important">
+                   </a>                     
+               </figure> 
+           </div>
+           <!-- Evaluer mon projet -->
+           <div class="section-content--container__wrap-txt">
+               <div class="section-content--container__wrap-txt--btn-cta">
+                   <svg class="btn-cta--symbol">
+                       <use href="{% static 'img/sprite.svg' %}#calendar"></use>
+                   </svg>
+                   <a href="#prospect-form" class="btn-cta--text">
+                       <span> Evaluer le montant de mon projet</span>
+                   </a>
+               </div>
+           </div>
+
+           <!-- Section Article -->
+           <div class="section-content--container__wrap-txt">
+            <h2 class="section-content--container__wrap-txt--title">Types de sols pour entrée de garage</h1>
+                <p class="section-content--container__wrap-txt--para">Nous retrouvons ces différents types de sols carrossables pour votre entrée de garage : le béton, l&#39;enrobé, la résine, le pavé, les dalles alvéolaires et le gravier stabilisé. Ces matériaux ont des caractéristiques différentes, et le choix doit se faire en fonction des critères suivants : le coût, la durabilité, l&#39;entretien, la résistance aux intempéries, le design et l&#39;effet antidérapant.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Les avantages et inconvénients des différents types de sols carrossables</h2>
+                <ul class="section-content--container__wrap-txt--list">
+                <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para-bold">Le béton :</p><p class="section-content--container__wrap-txt--para"> c&#39;est un revêtement solide, très durable et facile à entretenir. Il est également économique. Cependant, il peut fissurer ou se décolorer avec le temps.</p></li>
+                <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para-bold">L&#39;enrobé :</p><p class="section-content--container__wrap-txt--para"> il est résistant et durable, et il peut être utilisé aussi bien pour des entrées de garage que pour des parkings extérieurs. Il est toutefois relativement coûteux et nécessite un entretien régulier.</p></li>
+                <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para-bold">La résine :</p><p class="section-content--container__wrap-txt--para"> Elle permet de nombreuses options de personnalisation. Cependant, sa durabilité est relative et il peut être glissant.</p></li>
+                <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para-bold">Le pavé :</p><p class="section-content--container__wrap-txt--para"> il offre une grande variété de designs et de couleurs, est facilement remplaçable et n&#39;a pas besoin d&#39;être scellé. Cependant, il est souvent plus coûteux qu&#39;un béton ou un enrobé.</p></li>
+                <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para-bold">Les dalles alvéolaires :</p><p class="section-content--container__wrap-txt--para"> elles sont faciles à installer, antidérapantes, perméables, et résistent aux intempéries. Cependant, elles sont plus coûteuses et moins résistantes que le béton ou l&#39;enrobé.</p></li>
+                <li class="section-content--container__wrap-txt--list__item"><p class="section-content--container__wrap-txt--para-bold">Le gravier stabilisé :</p><p class="section-content--container__wrap-txt--para"> il est facile à installer, perméable et antidérapant. Cependant, il nécessite un entretien régulier pour éviter la prolifération de mauvaises herbes.</p></li>
+                </ul>
+                <h2 class="section-content--container__wrap-txt--title">Comment installer un sol carrossable pour une entrée de garage</h1>
+                <p class="section-content--container__wrap-txt--para">L&#39;installation d&#39;un sol carrossable pour une entrée de garage doit se faire en suivant certaines étapes pour garantir sa durabilité et sa solidité :</p>
+            
+                <ul class="section-content--container__wrap-txt--list">
+                <li class="section-content--container__wrap-txt--list__item">Réalisation d&#39;une base solide : Installer un fond de forme qui permettra d&#39;offrir une assise résistante à votre sol carrossable.</li>
+                <li class="section-content--container__wrap-txt--list__item">Préparation de la surface : Délimitation de la zone à aménager par la pose d’une bordure et traitement des dénivelés avec une <a href="{% url 'poitiers:pageServiceDalleBeton'%}"
+                    >dalle en béton</a>.</li>
+                <li class="section-content--container__wrap-txt--list__item">Installation : couche de matériaux choisis, tels que béton, enrobé, pavé, dalles alvéolaires ou gravier stabilisé.</li>
+                <li class="section-content--container__wrap-txt--list__item">Finition : Le choix de la finition dépendra de l&#39;option choisie, mais elle peut inclure l&#39;utilisation d&#39;un scellant pour augmenter la durabilité et la résistance.</li>
+                </ul>
+                <p class="section-content--container__wrap-txt--para">Les équipements nécessaires pour l&#39;installation d&#39;un sol carrossable pour une entrée de garage comprennent des outils de terrassement, des équipements de nivellement, des brouettes, des compacteurs et des scies à béton. </p>
+                <p class="section-content--container__wrap-txt--para">Les matériels complémentaires tels que les bordures, les dalles, le gravier ou les sables de jointoiement sont également nécessaires pour une installation réussie.</p>
+               
+           </div>
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-162.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-162.jpg' %}" alt="" style="object-position: 70% 70% !important">
+                   </a>                     
+               </figure> 
+           </div>
+           <!-- Evaluer mon projet -->
+           <div class="section-content--container__wrap-txt">
+               <div class="section-content--container__wrap-txt--btn-cta">
+                   <svg class="btn-cta--symbol">
+                       <use href="{% static 'img/sprite.svg' %}#calendar"></use>
+                   </svg>
+                   <a href="#prospect-form" class="btn-cta--text">
+                       <span> Evaluer le montant de mon projet</span>
+                   </a>
+               </div>
+           </div>
+
+           <!-- Section Article -->
+           <div class="section-content--container__wrap-txt">
+            <h2 class="section-content--container__wrap-txt--title">L&#39;entretien des sols carrossables pour une entrée de garage</h1>
+                <p class="section-content--container__wrap-txt--para">L&#39;entretien régulier d&#39;un sol carrossable permet de prolonger sa durée de vie et de garantir sa résistance aux agressions extérieures telles que les intempéries ou le passage fréquent de véhicules.</p>
+                <p class="section-content--container__wrap-txt--para">Voici quelques conseils à suivre pour un entretien efficace du revêtement de sol :</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Éviter de surcharger le sol carrossable</h2>
+                <p class="section-content--container__wrap-txt--para">Il est important de respecter la charge maximale supportée par le sol carrossable afin d&#39;éviter toute dégradation. Il est donc recommandé d&#39;éviter de surcharger votre allée de garage avec des objets lourds ou un stationnement prolongé de véhicules dont le poids dépasse les capacités du sol carrossable.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Nettoyer régulièrement votre allée de garage</h2>
+                <p class="section-content--container__wrap-txt--para">Le nettoyage régulier de votre sol carrossable permet d&#39;enlever toute saleté, herbes ou débris qui peuvent endommager le revêtement. Le nettoyage peut être effectué à l&#39;aide d&#39;un jet d&#39;eau ou d&#39;un balai-brosse spécialement adapté.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Appliquer un produit hydrofuge</h2>
+                <p class="section-content--container__wrap-txt--para">L&#39;application d&#39;un produit hydrofuge permet de protéger votre sol carrossable de l&#39;eau et de l&#39;humidité. Cette étape est particulièrement importante pour les revêtements en béton ou en pierre qui sont poreux.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Éviter les produits chimiques</h2>
+                <p class="section-content--container__wrap-txt--para">Il est déconseillé d&#39;utiliser des produits chimiques agressifs pour nettoyer votre sol carrossable. Ces produits peuvent endommager le revêtement et le rendre moins résistant. Il est recommandé d&#39;utiliser des produits nettoyants spécialement conçus pour l&#39;entretien des sols carrossables.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Éviter les chocs</h2>
+                <p class="section-content--container__wrap-txt--para">Il est important de faire attention aux chocs accidentels sur votre sol carrossable. Les impacts tels que les chocs de voiture ou les chutes d&#39;objets lourds peuvent causer des fissures et des dommages irréversibles.</p>
+                <h2 class="section-content--container__wrap-txt--title">La réparation d&#39;un sol carrossable abîmé sur une entrée de garage</h1>
+                <p class="section-content--container__wrap-txt--para">Malgré un entretien régulier, il est parfois nécessaire de réparer un sol carrossable abîmé sur une entrée de garage. Voici les étapes à suivre pour la réparation :</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Réparer les fissures et les trous</h2>
+                <p class="section-content--container__wrap-txt--para">La première étape consiste à réparer les fissures et les trous dans votre allée de garage. Pour ce faire, utilisez un mortier de rebouchage spécialement conçu pour les sols carrossables. Appliquez le mortier dans les fissures ou les trous en veillant à ce qu&#39;il soit bien réparti.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Laisser sécher le mortier</h2>
+                <p class="section-content--container__wrap-txt--para">Une fois le mortier appliqué, laissez-le sécher selon les instructions du fabricant.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Appliquer une couche de finition</h2>
+                <p class="section-content--container__wrap-txt--para">Une fois le mortier sec, appliquez une couche de finition pour protéger le sol carrossable. En fonction du type de revêtement, vous pouvez appliquer une peinture de sol, une résine de finition ou une nouvelle couche de béton.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Laisser sécher</h2>
+                <p class="section-content--container__wrap-txt--para">Laissez la couche de finition sécher selon les instructions du fabricant.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">Protéger le sol carrossable</h2>
+                <p class="section-content--container__wrap-txt--para">Enfin, protégez votre sol carrossable avec un produit hydrofuge pour éviter tout risque de dommage ultérieur.</p>
+                <p class="section-content--container__wrap-txt--para">En suivant ces étapes, vous pourrez facilement réparer un sol carrossable abîmé sur votre entrée de garage. Cependant, si les dommages sont importants, il est recommandé de faire appel à un professionnel pour une réparation plus complète.</p>
+               
+           </div>
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-169.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-169.jpg' %}" alt="" style="object-position: 70% 70% !important">
+                   </a>                     
+               </figure> 
+           </div>
+           <!-- Evaluer mon projet -->
+           <div class="section-content--container__wrap-txt">
+               <div class="section-content--container__wrap-txt--btn-cta">
+                   <svg class="btn-cta--symbol">
+                       <use href="{% static 'img/sprite.svg' %}#calendar"></use>
+                   </svg>
+                   <a href="#prospect-form" class="btn-cta--text">
+                       <span> Evaluer le montant de mon projet</span>
+                   </a>
+               </div>
+           </div>
+
+           <!-- Section Article -->
+           <div class="section-content--container__wrap-txt">
+            <h2 class="section-content--container__wrap-txt--title">Le coût pour installer un sol carrossable pour une entrée de garage</h1>
+                <p class="section-content--container__wrap-txt--para">Le coût pour l&#39;installation d&#39;un sol carrossable pour une entrée de garage dépend de plusieurs éléments. Le prix varie en fonction des matériaux utilisés, de la surface de la zone à couvrir, de la complexité des travaux, de la taille de vos portes de garage et de la main-d&#39;œuvre engagée. </p>
+                <p class="section-content--container__wrap-txt--para">Pour l&#39;estimation des coûts, il est important de prendre en compte les critères suivants :</p>
+                <ul class="section-content--container__wrap-txt--list">
+                <li class="section-content--container__wrap-txt--list__item">Les matériaux choisis pour le revêtement de sol carrossable</li>
+                <li class="section-content--container__wrap-txt--list__item">La surface totale de l&#39;allée de garage à couvrir</li>
+                <li class="section-content--container__wrap-txt--list__item">La complexité du site, notamment pour la préparation de la fondation</li>
+                <li class="section-content--container__wrap-txt--list__item">Le niveau de finition souhaité pour l&#39;entrée de garage</li>
+                </ul>
+                <p class="section-content--container__wrap-txt--para">Voici une liste des estimations de coûts pour chaque type de revêtement de sol carrossable :</p>
+                <ul class="section-content--container__wrap-txt--list">
+                <li class="section-content--container__wrap-txt--list__item">Béton imprimé : de 80€ à 150€ par m²</li>
+                <li class="section-content--container__wrap-txt--list__item">Enrobé à chaud : de 50€ à 110€ par m²</li>
+                <li class="section-content--container__wrap-txt--list__item">Revêtement en pavé : de 80€ à 150€ par m²</li>
+                <li class="section-content--container__wrap-txt--list__item">Gravier stabilisé : de 25€ à 60€ par m²</li>
+                <li class="section-content--container__wrap-txt--list__item">Dalles alvéolaires : de 40€ à 80€ par m²</li>
+                <li class="section-content--container__wrap-txt--list__item">Béton désactivé : de 80€ à 120€ par m²</li>
+                <li class="section-content--container__wrap-txt--list__item">Résine de sol : de 80€ à 130€ par m²</li>
+                </ul>
+                <h2 class="section-content--container__wrap-txt--title">Améliorer la sécurité et l&#39;esthétique de votre garage</h1>
+                <p class="section-content--container__wrap-txt--para">L&#39;amélioration de la sécurité de votre entrée de garage passe par la mise en place de différentes mesures pour éviter les risques d&#39;accidents. Vous pouvez choisir un revêtement adapté pour que votre allée de garage soit antidérapant et bien visible. Ajouter également des <a href="{% url 'poitiers:pageServiceBordureBeton'%}"
+                    >bordures</a> pour délimiter la zone réservée aux véhicules afin d&#39;éviter que ces derniers ne finissent dans votre jardin.</p>
+                <p class="section-content--container__wrap-txt--para">Lorsqu&#39;on considère l&#39;allure de l&#39;allée de garage, il est important de choisir un revêtement de sol carrossable qui soit en harmonie avec l&#39;aspect général de votre maison. Vous pouvez également opter pour des finitions comme des gravillons décoratifs ou même un éclairage LED.</p>
+                <p class="section-content--container__wrap-txt--para">Enfin, les finitions sont également un aspect important de votre entrée de garage. Vous pouvez ajouter des dalles en béton, opérer l&#39;aménagement en <a href="{% url 'poitiers:pageServiceTerrasseBois'%}"
+                    >terrasses en bois</a> ou même ajouter une couche de goudron pour renforcer la stabilité de votre revêtement. </p>
+                <p class="section-content--container__wrap-txt--para">Chez MIR Béton Poitiers, nos professionnels de MIR Béton Poitiers vous conseillent et vous accompagnent dans le choix et la mise en œuvre de votre sol carrossable pour une entrée de garage réussie.</p>
+                <h2 class="section-content--container__wrap-txt--subtitle">En bref</h2>
+                <p class="section-content--container__wrap-txt--para">Après avoir examiné les différents types de sols carrossables pour l&#39;entrée de garage, nous pouvons conclure que le choix du revêtement dépend de nombreux facteurs, tels que le budget, la durabilité, l&#39;esthétique, le niveau d&#39;entretien et la sécurité. Il est important de bien peser ces facteurs avant de se lancer dans un projet d&#39;aménagement extérieur.</p>
+                <p class="section-content--container__wrap-txt--para">MIR Béton Poitiers et ses artisans professionnels sont à votre disposition pour vous guider tout au long de votre démarche. Nous proposons des services complets, de la conception à la réalisation, en passant par le choix des matériaux et la supervision des travaux de <a href="{% url 'poitiers:pageServiceTravauxGrosOeuvre'%}"
+                    >gros œuvre</a> et de <a href="{% url 'poitiers:pageServiceTravauxSecondOeuvre'%}"
+                    >second œuvre</a>.</p>
+                <p class="section-content--container__wrap-txt--para">Les avantages de faire appel à MIR Béton Poitiers sont nombreux : </p>
+                <ul class="section-content--container__wrap-txt--list">
+                <li class="section-content--container__wrap-txt--list__item">Des plans 2D ou des visuels 3D pour visualiser votre projet avant la réalisation.</li>
+                <li class="section-content--container__wrap-txt--list__item">Des artisans et professionnels qualifiés pour assurer la qualité des réalisations.</li>
+                <li class="section-content--container__wrap-txt--list__item">Un suivi continu et rigoureux des travaux jusqu&#39;à la fin.</li>
+                </ul>
+                <p class="section-content--container__wrap-txt--para">Pour vos projets d&#39;aménagement extérieur, n&#39;hésitez pas à nous contacter.</p>
+               
+           </div>
+           <div class="section-content--container__wrapper-img-full">
+               <figure>
+                   <a href="{% static 'img/mirbeton-177.jpg' %}" 
+                   data-pswp-width="2000" 
+                   data-pswp-height="1500" 
+                   target="_blank">
+                       <img src="{% static 'img/mirbeton-177.jpg' %}" alt="" style="object-position: 70% 70% !important">
+                   </a>                     
+               </figure> 
+           </div>
+
+           <!-- Section Article -->
+           <div class="section-content--container__wrap-txt">
+            <h2 class="section-content--container__wrap-txt--title">MIR Béton à Poitiers</h1>
+                <p class="section-content--container__wrap-txt--para">A MIR Béton nous sommes spécialisés dans la réalisation de travaux notamment tout ce qui concerne l‘aménagement d’extérieur à Poitiers et dans les environs. 
+                Nos équipes vous proposent leurs services de qualité pour la pose de pavés de terrasses et allées.</p>
+                <p class="section-content--container__wrap-txt--para">En plus des sols carrossables et entrée de garage, nous proposons également d&#39;autres solutions pour l&#39;aménagement de votre extérieur, notamment des terrasses bois du <a href="{% url 'poitiers:pageServiceBetonDecoratif'%}"
+                    >béton décoratif</a>,  <a href="{% url 'poitiers:pageServiceBetonImprime'%}"
+                    >béton imprimé</a>, <a href="{% url 'poitiers:pageServiceBetonDesactive'%}"
+                    >béton désactivé</a> et de l’enrobé. Vous pourrez ainsi choisir la solution la plus adaptée à vos besoins et à votre budget.</p>
+                <p class="section-content--container__wrap-txt--para">Nous mettons notre expertise à votre service pour la création d&#39;une entrée de garage esthétique, fonctionnelle et résistante.Nous vous accompagnons tout au long du projet, de la conception à la réalisation, en passant par le choix des matériaux et des finitions.
+                Fort de plusieurs années d&#39;expérience dans le domaine, nous proposons des prestations de qualité pour répondre aux besoins de nos clients.</p>
+                <p class="section-content--container__wrap-txt--para">Si vous vous posez des questions comme:</p>
+            <ul class="section-content--container__wrap-txt--list">
+                <li class="section-content--container__wrap-txt--list__item">Quel sol pour une entrée de garage ?</li>
+                <li class="section-content--container__wrap-txt--list__item">Comment choisir le bon revêtement de sol pour une entrée de garage ?</li>
+                <li class="section-content--container__wrap-txt--list__item">Comment aménager une entrée de garage ?</li>
+                <li class="section-content--container__wrap-txt--list__item">Quel sol pour une allée carrossable ?</li>
+                <li class="section-content--container__wrap-txt--list__item">Quels matériaux pour une allée carrossable ?</li>
+                <li class="section-content--container__wrap-txt--list__item">Quel revêtement pour le passage de voiture ?</li>
+                <li class="section-content--container__wrap-txt--list__item">Quel revêtement devant un garage ?</li>
+                <li class="section-content--container__wrap-txt--list__item"> Comment faire une entrée de garage ?</li>
+            </ul>
+                <p class="section-content--container__wrap-txt--para">Nous saurons vous conseiller sur le choix des matériaux, les différentes techniques d&#39;installation et les finitions possibles.
+                Nos équipes MIR Béton seront en mesure de répondre à vos besoins et de réaliser votre projet sur mesure. Il vous suffit de faire une demande de devis en nous appelant ou en remplissant le formulaire. </p>
+                <p class="section-content--container__wrap-txt--para">Faire appel à MIR Béton pour la réalisation de vos entrée de garage , c&#39;est l&#39;assurance d&#39;un travail de qualité, réalisé dans les délais impartis et avec des matériaux de première qualité. N&#39;hésitez pas à nous contacter pour obtenir un devis gratuit et personnalisé.</p>
+           </div>
+
+           <!-- Evaluer mon projet -->
+           <div class="section-content--container__wrap-txt">
+               <div class="section-content--container__wrap-txt--btn-cta">
+                   <svg class="btn-cta--symbol">
+                       <use href="{% static 'img/sprite.svg' %}#calendar"></use>
+                   </svg>
+                   <a href="#prospect-form" class="btn-cta--text">
+                       <span> Evaluer le montant de mon projet</span>
+                   </a>
+               </div>
+           </div>
+
+       </div>
+   </div>
+
+   <div class="section-gallery-bis">
+    <div class="section-gallery-bis--wrapper-cards">
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-117.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-118.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-119.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-120.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-121.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-122.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-123.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-124.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-131.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-132.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-127.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-128.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-129.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-130.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-131.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-132.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-133.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-134.jpg' %}" alt="">
+        </div>
+        <div class="section-gallery-bis--wrapper-cards__wrapper-img">
+            <img class="section-gallery-bis--wrapper-cards__wrapper-img--img" src="{% static 'img/mirbeton-135.jpg' %}" alt="">
+        </div>
+    </div>
+   
+</div>
+
+<div class="section-reviews">
+    <div class="section-reviews--wrapper-text">
+        <p class="section-reviews--wrapper-text__title">avis</p>
+        <p class="section-reviews--wrapper-text__subtitle">Plus de 100 clients à ce jour</p>
+        <p class="section-reviews--wrapper-text__para">Nous prenons soin de servir nos clients pour leur offrir le meilleur résultat et la meilleur expérience. Voici quelques retours. N'hésitez pas à nous laisser un avis par mail</p>  
+    </div>
+    <div class="section-reviews--wrapper-reviews">
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220; Merci pour cette expérience, nous sommes satisfait du travail fourni. Dès la demande de devis j’ai pu être prise en charge rapidement et professionnellement. Notre terrasse a retrouvé sa jeunesse et rendu son éclat à la maison.
+                Cordialement, 
+                  &#8221;</p>
+            
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Mathilde Chaumier</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">03/04/2021</a>
+            </div>
+
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220; A la recherche d’une entreprise sérieuse pour rénover ma terrasse, j’ai apprécié le professionnalisme à la suite de la demande d’un devis. Les artisans ont fait un bon travail, je suis satisfait.  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Auguste Rabier</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">12/06/2021</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Ce fut une excellente expérience. Merci d' avoir répondu à mes questions et pour un travail bien réalisé. Les membres de votre équipe ont été courtois et démontré une bonne communication. Je ne pensais pas que le rendu transformerai autant mon extérieur.
+                &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Julie fredet</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">17/07/2021</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Entreprise sérieuse, bonne communication et respect des délais, je suis satisfait.  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Thomas joubert</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">06/09/2021</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Nous avions besoin d'ajouter des bordures dans notre jardin et faire un chemin pavé. Nous avons rapidement été prise en charge pour une appréciation du projet et un devis. Nous avons fait le choix de travailler avec vous par rapport au professionnalisme et au prix compétitif proposé. Nous n’avons pas été déçus. Merci encore  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Marie Renardet</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">10/10/2021</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Une équipe compréhensive et sympathiques. Ma chape de béton a été réalisé rapidement comme promis. Vous avez un certain savoir-faire, je suis satisfait du résultat. &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Hugo Vertoux</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">18/03/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Je voulais un revêtement pour mon garage. Les artisans sont venus rapidement et ont bien fait le travail. Je recommande.  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Hassan Djebali</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">04/05/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;J’ai été contacté par vos équipes à la suite de ma demande de devis. J’ai apprécié la flexibilité pour la prise de rendez-vous et l’écoute par rapport à mon problème.
+                Les artisans venus voir mon jardin et m'ont bien conseillé. Je suis satisfait de la qualité de leur travail et de leur savoir-faire.
+                  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Driss soule</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">15/10/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Le sol de la devanture de notre maison avait besoin d'une rénovation. J’ai effectué une demande de devis. La personne qui m’a contacté était à l’écoute et agréable. Nous avons pu convenir d’un rendez-vous rapidement. J’ai eu un devis à un prix intéressant et je suis satisfaite du travail effectué, ma maison est comme neuve.  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Victoire lambert</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">23/07/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;J’ai contacté vos équipes pour rénover ma salle de bain. J’ai obtenu un rendez-vous et un devis convenable rapidement. Les artisans ont effectué un bon travail. Merci
+                Cordialement,
+                  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Steven Brieux</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">13/06/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;J’ai apprécié votre réactivité ainsi que votre savoir-faire. Vous ne poussez pas les gens à faire des travaux inutiles, merci pour vos conseils.
+                Je suis satisfait de la prestation.
+                  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">David Bernard</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">08/10/2022</a>
+            </div>
+        </div>
+        <div class="section-reviews--wrapper-reviews__card">
+            <div class="section-reviews--wrapper-reviews__card--wrap-stars">
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+                <svg class="section-reviews--wrapper-reviews__card--wrap-stars__star">
+                    <use href="{% static 'img/sprite.svg' %}#star-gold"></use>
+                </svg>
+            </div>
+            <p class="section-reviews--wrapper-reviews__card--review-text">&#8220;Je suis contente de l’expérience en général. Nous souhaitions effectuer une rénovation de notre cuisine et notre salle de bain. J’ai apprécié le sérieux et l’organisation à la suite de ma demande de devis. L’artisan était à l’écoute et à pu nous faire profiter de son savoir-faire pour nous conseiller. Ceci avec le montant du devis convenable m’a motivé à travailler avec vous.
+                Je recommande 
+                  &#8221;</p>
+            <div class="section-reviews--wrapper-reviews__card--wrap-origin">
+                <p class="section-reviews--wrapper-reviews__card--wrap-origin__name">Thérèse Mouveaux</p>
+                <a href="#" class="section-reviews--wrapper-reviews__card--wrap-origin__origin">17/10/2022</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section-content">
+        <div class="section-content--container">
+           <div class="section-content--container__wrapper-form">
+            <div class="subsection-prospect-form" id="prospect-form">
+                <div class="subsection-prospect-form--wrapper-header">
+                    <p class="subsection-prospect-form--wrapper-header__title">Devis Gratuit en un Insant</p>
+                    <ul class="subsection-prospect-form--wrap-benefit-list">
+                        <li class="subsection-prospect-form--wrap-benefit-list__item">Devis sans engagement</li>
+                        <li class="subsection-prospect-form--wrap-benefit-list__item">Inspection Gratuite</li>
+                    </ul>
+                    <p class="subsection-prospect-form--wrapper-header__promo">
+                        * Rendu 2D/3D à 199 euro avant le 30/04/2023
+                    </p>
+                </div>
+                <div class="subsection-prospect-form--wrapper-form">
+                    <form class="subsection-prospect-form--wrapper-form__form" method="POST">
+                        <div class="subsection-prospect-form--wrapper-form__form--wrapper-radio">
+                            <p class="subsection-prospect-form--wrapper-form__form--wrapper-radio__desc">Quel type de travaux?</p>
+                            {{ lead_form.work_type}}
+                        </div>
+
+                        <div class="subsection-prospect-form--wrapper-form__form--wrapper-select">
+                            <p class="subsection-prospect-form--wrapper-form__form--wrapper-select__desc" for="work-surface">Quel Surface?</p>
+                            <div class="subsection-prospect-form--wrapper-form__form--wrapper-select__wrap-choices">
+                                {{ lead_form.surface}} 
+                            </div>
+                        </div>
+
+                        {{ lead_form.first_name}}
+                        {{ lead_form.last_name}}
+                        {{ lead_form.email}}
+                        {{ lead_form.phone}}
+                        {{ lead_form.zipcode}}
+                        {{ lead_form.lead_consult_form }}
+                        <input class="subsection-prospect-form--wrapper-form__form--submit" type="submit" value="Recevoir mon devis">
+                        {% csrf_token %}
+                    </form>
+                    <div class="subsection-prospect-form--wrapper-form__wrap-policy">
+                        <p class="subsection-prospect-form--wrapper-form__wrap-policy--para">En renseignant vos informations, vous acceptez de recevoir nos communications par courrier électronique et télépphone et vous prenez connaissance de notre <a href="" class="nakedLink">Politique de confidentialité</a>. Vous pouvez vous désinscrire à tout moment avec le lien fourni dans chaque e-mail ou en envoyant un message à leadinsightmarketing@gmail.com.</p>
+                    </div>
+                </div>
+            </div>
+           </div>    
+        </div>
+    </div>
+
+    <!-- <div class="section-articles">
+        <div class="section-articles--wrapper-cards">
+            <div class="section-articles--wrapper-cards__card">
+                <img class="section-articles--wrapper-cards__card--illus" src="{% static 'img/mirbeton-136.jpg' %}" alt="">
+                <div class="section-articles--wrapper-cards__card--wrap-text">
+                    <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part I?</h2>
+                
+                    <a href="{% url 'ales:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+                </div>
+            </div> 
+            <div class="section-articles--wrapper-cards__card">
+                <img class="section-articles--wrapper-cards__card--illus" src="{% static 'img/mirbeton-137.jpg' %}" alt="">
+                <div class="section-articles--wrapper-cards__card--wrap-text">
+                    <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part II?</h2>
+                
+                    <a href="{% url 'ales:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+                </div>
+            </div> 
+            <div class="section-articles--wrapper-cards__card">
+                <img class="section-articles--wrapper-cards__card--illus" src="{% static 'img/mirbeton-138.jpg' %}" alt="">
+                <div class="section-articles--wrapper-cards__card--wrap-text">
+                    <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part III?</h2>
+                
+                    <a href="{% url 'ales:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+                </div>
+            </div> 
+            <div class="section-articles--wrapper-cards__card">
+                <img class="section-articles--wrapper-cards__card--illus" src="{% static 'img/mirbeton-139.jpg' %}" alt="">
+                <div class="section-articles--wrapper-cards__card--wrap-text">
+                    <h2 class="section-articles--wrapper-cards__card--wrap-text__title">Quel est le meilleur béton pour ma terrasse part IV?</h2>
+                
+                    <a href="{% url 'ales:pageArticle_1'%}" class="section-articles--wrapper-cards__card--wrap-text__btn">lire l'article</a>
+                </div>
+            </div>   
+        </div>
+    </div> -->
+ 
+{% endblock %}
