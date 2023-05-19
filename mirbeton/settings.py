@@ -23,7 +23,7 @@ environ.Env.read_env()
 SECRET_KEY = env.str('SECRET_KEY', 'sample_secret')
 
 # SECURITY WARNING: don't run with debu turned on in production!
-DEBUG = env.bool('DEBUG', False)
+DEBUG = env.bool('DEBUG', True)
 
 # EMAIL SETTINGS
 EMAIL_BACKEND = env('EMAIL_BACKEND')
