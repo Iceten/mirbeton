@@ -17,10 +17,9 @@ from django.contrib import admin
 from django.urls import path, re_path
 from django.conf.urls import include
 from django.contrib.sitemaps.views import sitemap
-
+from django.conf import settings # new
+from django.conf.urls.static import static #new
 from siteMain import views
-# from siteLP01 import views
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,3 +33,7 @@ urlpatterns = [
     re_path(r'^poitiers/',
             include('poitiers.urls', namespace="poitiers")),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_URL)
