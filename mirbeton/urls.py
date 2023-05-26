@@ -20,9 +20,15 @@ from django.contrib.sitemaps.views import sitemap
 from django.conf import settings # new
 from django.conf.urls.static import static #new
 from siteMain import views
+from mirbeton.sitemaps import StaticViewSitemap
+
+sitemaps = { 
+        'static': StaticViewSitemap
+}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sitemap.xml/', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     re_path(r'^$', views.index, name='index'),
     re_path(r'^siteMain/', include('siteMain.urls', namespace="siteMain")),
     re_path(r'^antony/', include('antony.urls', namespace="antony")),

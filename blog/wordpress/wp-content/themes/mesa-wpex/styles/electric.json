@@ -1,0 +1,82 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Electric",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#f3f3f1",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#0f172a",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#2500ff",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#2500ff",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#2500ff",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--base)"
+				},
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--tertiary)",
+						"text": "var(--wp--preset--color--base)"
+					}
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--secondary)"
+				},
+				"typography": {
+					"textDecoration": "underline"
+				}
+			}
+		},
+		"blocks": {
+			"core/post-content": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--secondary)"
+						}
+					}
+				}
+			},
+			"core/code": {
+				"color": {
+					"background": "#f6f6f6",
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"border": {
+					"color": "rgba(0,0,0,.1)",
+					"style": "solid",
+					"width": "1px"
+				}
+			}
+		}
+	}
+}

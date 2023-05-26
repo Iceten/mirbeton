@@ -23,7 +23,7 @@ environ.Env.read_env()
 SECRET_KEY = env.str('SECRET_KEY', 'sample_secret')
 
 # SECURITY WARNING: don't run with debu turned on in production!
-DEBUG = env.bool('DEBUG', True)
+DEBUG = env.bool('DEBUG', False)
 
 # EMAIL SETTINGS
 EMAIL_BACKEND = env('EMAIL_BACKEND')
@@ -47,7 +47,7 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 # SECURITY WARNING: keep the secret key used in production secret!
 
 SECRET_KEY = env.str('SECRET_KEY', 'sample_secret')
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mirbeton.com', 'mirbeton.fr']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '35.180.234.216','mirbeton.com', 'mirbeton.fr','www.mirbeton.com','www.mirbeton.fr']
 
 
 # Application definition
@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'django.contrib.sitemaps',
     'whitenoise.runserver_nostatic',
 ]
@@ -160,6 +161,7 @@ STATICFILES_DIRS = [
     STATIC_DIR,
 ]
 
+SITE_ID=1
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -179,3 +181,14 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 # django_heroku.settings(locals())
+
+# AWS S3 SETTINGS
+AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = env('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_SIGNATURE_NAME = env('AWS_S3_SIGNATURE_NAME')
+AWS_S3_REGION_NAME = env('AWS_S3_REGION_NAME')
+AWS_S3_FILE_OVERWRITE = env.bool('AWS_S3_FILE_OVERWRITE')
+AWS_DEFAULT_ACL = env('AWS_DEFAULT_ACL')
+AWS_S3_VERITY = env.bool('AWS_S3_VERITY')
+DEFAULT_FILE_STORAGE = env('DEFAULT_FILE_STORAGE')

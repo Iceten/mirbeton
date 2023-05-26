@@ -1,0 +1,65 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Slate",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#0f172a",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#f8fafc",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#94a3b8",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#a8b5c6",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#a5b4fc",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--base)"
+				},
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--secondary)"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/navigation": {
+				"css": "& .wp-block-navigation__submenu-container{background:var(--wp--preset--color--base)!important;border-color:rgba(255,255,255,.15)!important;}"
+			},
+			"core/post-featured-image": {
+				"css": "& img{opacity:.9}"
+			},
+			"core/code": {
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--base)"
+				}
+			}
+		}
+	}
+}
